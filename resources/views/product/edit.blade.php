@@ -120,16 +120,16 @@ img {
                                                       <label>เลือก size สินค้า*</label>
                                                       <select name="product_size" class="form-control border-input" required>
 
-                    								                      <option value="S"  @if( $objs->roduct_size == 'S')
+                    								                      <option value="S"  @if( $objs->product_size == 'S')
                                         selected='selected'
                                         @endif>-- Size S --</option>
-                                                          <option value="M" @if( $objs->roduct_size == 'M')
+                                                          <option value="M" @if( $objs->product_size == 'M')
                                         selected='selected'
                                         @endif>-- Size M --</option>
-                                                          <option value="L" @if( $objs->roduct_size == 'L')
+                                                          <option value="L" @if( $objs->product_size == 'L')
                                         selected='selected'
                                         @endif>-- Size L --</option>
-                                                          <option value="XL" @if( $objs->roduct_size == 'XL')
+                                                          <option value="XL" @if( $objs->product_size == 'XL')
                                         selected='selected'
                                         @endif>-- Size XL --</option>
 
