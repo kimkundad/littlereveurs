@@ -96,6 +96,6 @@
                 </li>
             </ul>
     	</div>
-<div class="sidebar-background" style="background-image: url({{url('assets/img/sidebar-5.jpg')}}) "></div>
+<div class="sidebar-background" style="background-image: url({{secure_asset('assets/img/sidebar-5.jpg')}}) "></div>
 
     </div>
