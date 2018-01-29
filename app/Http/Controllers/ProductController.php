@@ -295,5 +295,18 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+        $objs = DB::table('products')
+          ->select(
+             'products.*'
+             )
+          ->where('id', $id)
+          ->first();
+
+      $file_path = 'assets/product/'.$objs->product_image;
+      unlink($file_path);
+
+      $obj = product::find($id);
+      $obj->delete();
+      return redirect(url('product'))->with('del_product','คุณทำการลบอสังหา สำเร็จ');
     }
 }

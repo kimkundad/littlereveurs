@@ -146,7 +146,7 @@ class CategoryController extends Controller
       ->where('categories.category_id', $id)
       ->delete();
 
-      
+
       return redirect(url('category'))->with('del_category','คุณทำการลบอสังหา สำเร็จ');
     }
 }

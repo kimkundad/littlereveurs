@@ -154,13 +154,13 @@ $("[name='my-checkbox']").on('switchChange.bootstrapSwitch',function(){
 </script>
 
 
-@if ($message = Session::get('edit_success'))
+@if ($message = Session::get('del_product'))
 <script type="text/javascript">
 type = ['success'];
 color = Math.floor((Math.random() * 4) + 1);
 $.notify({
     icon: "ti-gift",
-    message: "ยินดีด้วย ได้ทำการแก้ไขข้อมูล สำเร็จเรียบร้อยแล้วค่ะ"
+    message: "ยินดีด้วย ได้ทำการลบข้อมูล สำเร็จเรียบร้อยแล้วค่ะ"
 
   },{
       type: type[color],
