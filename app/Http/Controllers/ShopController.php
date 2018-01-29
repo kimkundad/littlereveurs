@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\province;
 use App\shop;
+use App\stock;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Facades\DB;
 
@@ -21,9 +22,15 @@ class ShopController extends Controller
       $shop = DB::table('shops')->select(
             'shops.*'
             )
-            ->where('user_id', Auth::user()->id)
             ->orderBy('id', 'desc')
             ->get();
+
+
+
+
+            $data['objs'] = $shop;
+
+
 
       $data['objs'] = $shop;
       $data['header'] = "Shop";
@@ -119,10 +126,86 @@ class ShopController extends Controller
             'province.*'
             )
             ->leftjoin('province', 'province.PROVINCE_ID', '=', 'shops.provience_id')
-            ->where('user_id', Auth::user()->id)
             ->where('id', $id)
             ->first();
 
+
+            $product = DB::table('products')->select(
+                  'products.*',
+                  'categories.*'
+                  )
+                  ->leftjoin('categories','categories.category_id', 'products.cat_id')
+                  ->where('products.shop_id', $id)
+                  ->orderBy('products.id', 'desc')
+                  ->paginate(15);
+
+
+                  $total = DB::table('products')->select(
+                        'products.*',
+                        'categories.*'
+                        )
+                        ->leftjoin('categories','categories.category_id', 'products.cat_id')
+                        ->where('products.shop_id', $id)
+                        ->orderBy('products.id', 'desc')
+                        ->sum('products.product_sum');
+
+                        $count_pro = DB::table('products')->select(
+                              'products.*',
+                              'categories.*'
+                              )
+                              ->leftjoin('categories','categories.category_id', 'products.cat_id')
+                              ->where('products.shop_id', $id)
+                              ->orderBy('products.id', 'desc')
+                              ->count();
+
+                  $stock = DB::table('stocks')->select(
+                        'stocks.*',
+                        'stocks.created_at as created_stock',
+                        'stocks.id as st_id',
+                        'products.*',
+                        'users.*'
+                        )
+                        ->leftjoin('products','products.id', 'stocks.product_id')
+                        ->leftjoin('users','users.id', 'stocks.user_id')
+                        ->where('stocks.stocks_status', 0)
+                        ->where('products.shop_id', $id)
+                        ->orderBy('stocks.id', 'desc')
+                        ->paginate(15);
+
+                        $sum_price = 0;
+
+                        foreach ($stock as $obj) {
+                            //$optionsRes = [];
+                            $options = DB::table('products')->where('id',$obj->product_id)->first();
+
+                                $optionsRes = $options->price_2*$obj->product_total;
+
+                            $sum_price += $optionsRes;
+
+                        }
+
+
+                        $stock_sum = DB::table('stocks')->select(
+                              'stocks.*',
+                              'stocks.created_at as created_stock',
+                              'stocks.id as st_id',
+                              'products.*',
+                              'users.*'
+                              )
+                              ->leftjoin('products','products.id', 'stocks.product_id')
+                              ->leftjoin('users','users.id', 'stocks.user_id')
+                              ->where('stocks.stocks_status', 0)
+                              ->where('products.shop_id', $id)
+                              ->orderBy('stocks.id', 'desc')
+                              ->sum('stocks.product_total');
+
+      $data['sum_price'] = $sum_price;
+      $data['stock_sum'] = $stock_sum;
+      $data['count_pro'] = $count_pro;
+      $data['total_product'] = $total;
+
+      $data['stock'] = $stock;
+      $data['product'] = $product;
       $data['header'] = $shop->shop_name;
       $data['objs'] = $shop;
       $data['url'] = url('user_shop/'.$id);
@@ -143,7 +226,6 @@ class ShopController extends Controller
             'province.*'
             )
             ->leftjoin('province', 'province.PROVINCE_ID', '=', 'shops.provience_id')
-            ->where('shops.user_id', Auth::user()->id)
             ->where('shops.id', $id)
             ->first();
 

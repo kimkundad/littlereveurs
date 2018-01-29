@@ -96,6 +96,27 @@ img {
                                                   </div>
 
 
+                                                  <div class="form-group{{ $errors->has('price_1') ? ' has-error' : '' }}">
+                                                      <label>ราคาปลีก สินค้า*</label>
+                                                      <input type="number" class="form-control border-input" name="price_1" value="{{ old( 'price_1') }}">
+                                                      @if ($errors->has('price_1'))
+                                                          <span class="help-block">
+                                                              <strong>กรุณาใส่ ราคาปลีก ของคุณด้วย</strong>
+                                                          </span>
+                                                      @endif
+                                                  </div>
+
+                                                  <div class="form-group{{ $errors->has('price_2') ? ' has-error' : '' }}">
+                                                      <label>ราคาส่ง สินค้า*</label>
+                                                      <input type="number" class="form-control border-input" name="price_2" value="{{ old( 'price_2') }}">
+                                                      @if ($errors->has('price_2'))
+                                                          <span class="help-block">
+                                                              <strong>กรุณาใส่ ราคาส่ง ของคุณด้วย</strong>
+                                                          </span>
+                                                      @endif
+                                                  </div>
+
+
                                                   <div class="form-group{{ $errors->has('shop_name') ? ' has-error' : '' }}">
                                                       <label>เลือกร้านค้า*</label>
                                                       <select name="shop_name" class="form-control border-input" required>

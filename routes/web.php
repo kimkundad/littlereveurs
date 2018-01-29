@@ -16,7 +16,7 @@ Route::auth();
 Route::get('/', function () {
 
   if(Auth::check()){
-    return Redirect::to('dashboard');
+    return Redirect::to('12121');
   }else{
     return view('auth.login');
   }
@@ -30,7 +30,7 @@ Route::get('/callback', 'FacebookAuthController@callback');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => 'admin'], function () {
 
   Route::get('dashboard', 'DashboardController@index');
   Route::resource('user_profile', 'ProfileController');
@@ -38,8 +38,11 @@ Route::group(['middleware' => 'auth'], function () {
   Route::resource('user_shop', 'ShopController');
   Route::resource('category', 'CategoryController');
   Route::resource('product', 'ProductController');
+  Route::resource('stock', 'StockController');
+  Route::resource('users', 'UsersController');
 
   Route::post('api/post_status', 'ProductController@post_status');
+  Route::post('api/user_status', 'UsersController@users_status');
 
 
   });

@@ -17,12 +17,15 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li {{ (Request::is('user_profile*') ? 'class=active' : '') }}>
-                    <a href="{{url('user_profile')}}">
+
+
+                <li {{ (Request::is('users*') ? 'class=active' : '') }} >
+                    <a href="{{url('users')}}">
                         <i class="ti-user"></i>
-                        <p>User Profile</p>
+                        <p>Users</p>
                     </a>
                 </li>
+
 
 
                 <li {{ (Request::is('user_shop*') ? 'class=active' : '') }}>
@@ -45,6 +48,14 @@
                         <p>Product</p>
                     </a>
                 </li>
+
+
+                <li {{ (Request::is('stock*') ? 'class=active' : '') }}>
+                    <a href="{{url('stock')}}">
+                        <i class="ti-view-list-alt"></i>
+                              <p>Stock List</p>
+                          </a>
+                      </li>
 
           <!--      <li>
                     <a href="table.html">

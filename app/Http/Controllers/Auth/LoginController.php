@@ -28,7 +28,7 @@ class LoginController extends Controller
 
         $this->clearLoginAttempts($request);
         if ($request->user()->is_admin == 1) {
-          return redirect('admin/dashboard');
+          return redirect('dashboard');
         }
         return $this->authenticated($request, $this->guard()->user())
                 ?: redirect()->intended($this->redirectPath());
@@ -39,7 +39,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/1212';
 
     /**
      * Create a new controller instance.

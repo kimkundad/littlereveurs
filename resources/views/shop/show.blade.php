@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('stylesheet')
-
+<link rel="stylesheet" href="{{asset('./assets/bootstrap-switch-master/css/bootstrap3/bootstrap-switch.css')}}" />
 <style>
 .card-user .avatar {
     width: 150px;
@@ -85,7 +85,7 @@ h5, .h5 {
                           <div class="text-center">
                               <div class="row">
                                   <div class="col-md-5 col-md-offset-1">
-                                      <h5>12<br><small>Product</small></h5>
+                                      <h5>{{$count_pro}}<br><small>Product</small></h5>
                                   </div>
                                   <div class="col-md-6">
                                       <h5>2GB<br><small>Shared</small></h5>
@@ -94,69 +94,14 @@ h5, .h5 {
                               </div>
                           </div>
                       </div>
-                      <div class="card">
-                          <div class="header">
-                              <h4 class="title">Team พนักงานขาย</h4>
-                          </div>
-                          <div class="content">
-                              <ul class="list-unstyled team-members">
-                                          <li>
-                                              <div class="row">
-                                                  <div class="col-xs-3">
-                                                      <div class="avatar">
-                                                          <img src="{{url('assets/img/faces/face-0.jpg')}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-xs-6">
-                                                      DJ Khaled
-                                                      <br>
-                                                      <span class="text-muted"><small>Offline</small></span>
-                                                  </div>
 
-                                                  <div class="col-xs-3 text-right">
-                                                      <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-envelope"></i></btn>
-                                                  </div>
-                                              </div>
-                                          </li>
-                                          <li>
-                                              <div class="row">
-                                                  <div class="col-xs-3">
-                                                      <div class="avatar">
-                                                          <img src="{{url('assets/img/faces/face-1.jpg')}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-xs-6">
-                                                      Creative Tim
-                                                      <br>
-                                                      <span class="text-success"><small>Available</small></span>
-                                                  </div>
 
-                                                  <div class="col-xs-3 text-right">
-                                                      <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-envelope"></i></btn>
-                                                  </div>
-                                              </div>
-                                          </li>
-                                          <li>
-                                              <div class="row">
-                                                  <div class="col-xs-3">
-                                                      <div class="avatar">
-                                                          <img src="{{url('assets/img/faces/face-3.jpg')}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-xs-6">
-                                                      Flume
-                                                      <br>
-                                                      <span class="text-danger"><small>Busy</small></span>
-                                                  </div>
 
-                                                  <div class="col-xs-3 text-right">
-                                                      <btn class="btn btn-sm btn-success btn-icon"><i class="fa fa-envelope"></i></btn>
-                                                  </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                          </div>
-                      </div>
+
+
+
+
+
                   </div>
 
 
@@ -172,14 +117,14 @@ h5, .h5 {
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Sales Amount</p>
-                                            {{number_format($objs->shop_sale)}}
+                                            {{number_format($stock_sum)}}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer">
                                     <hr>
                                     <div class="stats">
-                                        <i class="ti-calendar"></i> ยอดขายรายเดือน
+                                        <i class="ti-calendar"></i> ยอดขายปลีก {{$sum_price}}
                                     </div>
                                 </div>
                             </div>
@@ -199,14 +144,14 @@ h5, .h5 {
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>จำนวนสินค้า</p>
-                                            105
+                                            {{$total_product}}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="footer">
                                     <hr>
                                     <div class="stats" style="color: #3091B2;">
-                                        <i class="ti-location-pin"></i> จังหวัด {{$objs->PROVINCE_NAME}}
+                                        <i class="ti-briefcase"></i> จำนวนรายการ {{$count_pro}}
                                     </div>
                                 </div>
                             </div>
@@ -223,71 +168,135 @@ h5, .h5 {
                               <p class="category">คุณสามารถบริหารจัดการสินค้าของ <span>{{$objs->shop_name}}</span></p>
                           </div>
                           <div class="content table-responsive table-full-width">
-                              <table class="table table-striped">
-                                  <thead>
-                                      <tr><th>ID</th>
-                                    <th>Name</th>
-                                    <th>Salary</th>
-                                    <th>Country</th>
-                                    <th>City</th>
-                                  </tr></thead>
-                                  <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>Dakota Rice</td>
-                                        <td>$36,738</td>
-                                        <td>Niger</td>
-                                        <td>Oud-Turnhout</td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>Minerva Hooper</td>
-                                        <td>$23,789</td>
-                                        <td>Curaçao</td>
-                                        <td>Sinaai-Waas</td>
-                                      </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>Sage Rodriguez</td>
-                                        <td>$56,142</td>
-                                        <td>Netherlands</td>
-                                        <td>Baileux</td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>Philip Chaney</td>
-                                        <td>$38,735</td>
-                                        <td>Korea, South</td>
-                                        <td>Overland Park</td>
-                                      </tr>
-                                      <tr>
-                                        <td>5</td>
-                                        <td>Doris Greene</td>
-                                        <td>$63,542</td>
-                                        <td>Malawi</td>
-                                        <td>Feldkirchen in Kärnten</td>
-                                      </tr>
-                                      <tr>
-                                        <td>6</td>
-                                        <td>Mason Porter</td>
-                                        <td>$78,615</td>
-                                        <td>Chile</td>
-                                        <td>Gloucester</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
 
-                                <ul class="pagination" style="padding-left:15px;">
-                                  <li><a href="#">1</a></li>
-                                  <li><a href="#">2</a></li>
-                                  <li><a href="#">3</a></li>
-                                  <li><a href="#">4</a></li>
-                                  <li><a href="#">5</a></li>
-                                </ul>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th>ID</th>
+                                  <th>ชื่อสินค้า</th>
+                                  <th>หมวดหมู่</th>
+                                  <th>คงเหลือ</th>
+                                  <th>สถานะ</th>
+                                  <th>จัดการ</th>
+                                </tr>
+                              </thead>
+                                <tbody>
+
+
+            @if($product)
+              @foreach($product as $products)
+                                    <tr id="{{$products->id}}">
+                                      <td>{{$products->product_code}}</td>
+                                      <td>{{$products->product_name}}</td>
+                                      <td>{{$products->cat_name}}</td>
+                                      <td>{{$products->product_sum}}</td>
+                                      <td>
+
+                                        <input type="checkbox" name="my-checkbox" id="switch-size" data-size="mini"
+                       @if($products->product_status == 1)
+                        checked="checked"
+                        @endif
+                        />
+                                      </td>
+                                      <td>
+
+                                        <a style="float:left; margin-right:5px;" title="แก้ไขหมวดหมู่" class="btn btn-primary btn-xs" href="{{url('product/'.$products->id.'/edit')}}" role="button"><i class="fa fa-cog "></i> </a>
+
+                                        <form  action="" method="post" onsubmit="return(confirm('Do you want Delete'))">
+                                          <input type="hidden" name="_method" value="DELETE">
+                                           <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                          <button type="submit" title="ลบหมวดหมู่" class="btn btn-danger btn-xs"><i class="fa fa-times "></i></button>
+                                        </form>
+
+                                        </td>
+                                    </tr>
+              @endforeach
+            @endif
+
+                                </tbody>
+                            </table>
+
+                                {{ $product->links() }}
 
 
                           </div>
                       </div>
+                    </div>
+
+
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+
+                                <p class="category">คุณสามารถเพิ่มรายการตัดสินค้าในคลังได้</p>
+                            </div>
+
+
+
+                            <?php
+                            function DateThai($strDate)
+                            {
+                            $strYear = date("Y",strtotime($strDate))+543;
+                            $strMonth= date("n",strtotime($strDate));
+                            $strDay= date("j",strtotime($strDate));
+                            $strHour= date("H",strtotime($strDate));
+                            $strMinute= date("i",strtotime($strDate));
+                            $strSeconds= date("s",strtotime($strDate));
+                            $strMonthCut = Array("","ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค.");
+                            $strMonthThai=$strMonthCut[$strMonth];
+                            return "$strDay $strMonthThai $strYear";
+                            }
+                             ?>
+
+
+                            <div class="content table-responsive table-full-width">
+
+                              <a class="btn btn-default " href="{{url('stock/create')}}" role="button" style="margin-left:12px;">
+                              <i class="fa fa-plus"></i> เพิ่มรายการใหม่</a>
+
+                                <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th>#ID</th>
+                                      <th>วันที่</th>
+                                      <th>ชื่อสินค้า</th>
+                                      <th>จำนวนตัด</th>
+                                      <th>คงเหลือ</th>
+
+                                      <th>จัดการ</th>
+                                    </tr>
+                                  </thead>
+                                    <tbody>
+
+                                      @if($stock)
+                                        @foreach($stock as $u)
+                                                              <tr id="{{$u->st_id}}">
+                                                                <td>{{$u->st_id}}</td>
+                                                                <td><?php echo DateThai($u->created_stock); ?></td>
+                                                                <td>{{$u->product_name}}</td>
+                                                                <td>{{$u->product_total}}</td>
+                                                                <td>{{$u->product_sum}}</td>
+
+
+                                                                <td>
+
+                                                                  <a style="float:left; margin-right:5px;" title="แก้ไขหมวดหมู่" class="btn btn-primary btn-xs" href="{{url('stock/'.$u->st_id.'/edit')}}" role="button"><i class="fa fa-cog "></i> </a>
+
+
+
+                                                                  </td>
+                                                              </tr>
+                                        @endforeach
+                                      @endif
+
+
+
+                                    </tbody>
+                                </table>
+                                {{ $stock->links() }}
+                            </div>
+                        </div>
                     </div>
 
 
@@ -311,8 +320,47 @@ h5, .h5 {
 @section('scripts')
 
 <script src="{{url('assets/js/bootstrap-notify.js')}}"></script>
+<script src="{{asset('/assets/bootstrap-switch-master/js/bootstrap-switch.js')}}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("[name='my-checkbox']").bootstrapSwitch();
+//  $("input:checkbox").change(function() {
+
+$("[name='my-checkbox']").on('switchChange.bootstrapSwitch',function(){
+    var product_id = $(this).closest('tr').attr('id');
+
+    $.ajax({
+            type:'POST',
+            url:'{{url('api/post_status')}}',
+            headers: {'X-CSRF-TOKEN': '{{ csrf_token() }}' },
+            data: { "product_id" : product_id },
+            success: function(data){
+              if(data.data.success){
 
 
+                type = ['success'];
+                color = Math.floor((Math.random() * 4) + 1);
+                $.notify({
+                    icon: "ti-gift",
+                    message: "ยินดีด้วย ได้ทำการแก้ไขข้อมูล สำเร็จเรียบร้อยแล้วค่ะ"
+
+                  },{
+                      type: type[color],
+                      timer: 2000,
+                      placement: {
+                          from: 'top',
+                          align: 'right'
+                      }
+                  });
+
+
+
+              }
+            }
+        });
+    });
+});
+</script>
 
 @if ($message = Session::get('success_user'))
 <script type="text/javascript">

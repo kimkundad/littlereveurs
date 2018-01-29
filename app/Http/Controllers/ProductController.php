@@ -23,9 +23,8 @@ class ProductController extends Controller
             'categories.*'
             )
             ->leftjoin('categories','categories.category_id', 'products.cat_id')
-            ->where('products.user_id', Auth::user()->id)
             ->orderBy('products.id', 'desc')
-            ->get();
+            ->paginate(15);
 
       $data['objs'] = $shop;
       $data['header'] = "สินค้าทั้งหมด";
@@ -80,6 +79,8 @@ class ProductController extends Controller
        'product_cat' => 'required',
        'product_sum' => 'required',
        'product_detail' => 'required',
+       'price_1' => 'required',
+       'price_2' => 'required',
        'shop_name' => 'required'
       ]);
 
@@ -102,6 +103,8 @@ class ProductController extends Controller
      $package->product_image = $input['imagename'];
      $package->product_status = 0;
      $package->shop_id = $request['shop_name'];
+     $package->price_1 = $request['price_1'];
+     $package->price_2 = $request['price_2'];
      $package->save();
 
  $the_id = $package->id;
@@ -139,7 +142,6 @@ class ProductController extends Controller
               )
               ->leftjoin('shops','shops.id', 'products.shop_id')
               ->leftjoin('categories','categories.category_id', 'products.cat_id')
-              ->where('products.user_id', Auth::user()->id)
               ->where('products.id', $id)
               ->orderBy('products.id', 'desc')
               ->first();
@@ -194,6 +196,8 @@ class ProductController extends Controller
          'product_cat' => 'required',
          'product_sum' => 'required',
          'product_detail' => 'required',
+         'price_1' => 'required',
+         'price_2' => 'required',
          'shop_name' => 'required'
         ]);
 
@@ -214,6 +218,8 @@ class ProductController extends Controller
        $package->product_sum = $request['product_sum'];
        $package->product_image = $input['imagename'];
        $package->shop_id = $request['shop_name'];
+       $package->price_1 = $request['price_1'];
+       $package->price_2 = $request['price_2'];
        $package->save();
 
        $the_id = $request['id'];
@@ -229,6 +235,8 @@ class ProductController extends Controller
          'product_cat' => 'required',
          'product_sum' => 'required',
          'product_detail' => 'required',
+         'price_1' => 'required',
+         'price_2' => 'required',
          'shop_name' => 'required'
         ]);
 
@@ -241,6 +249,8 @@ class ProductController extends Controller
        $package->product_code = $request['product_code'];
        $package->product_sum = $request['product_sum'];
        $package->shop_id = $request['shop_name'];
+       $package->price_1 = $request['price_1'];
+       $package->price_2 = $request['price_2'];
        $package->save();
 
        $the_id = $request['id'];

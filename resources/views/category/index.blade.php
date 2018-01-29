@@ -7,7 +7,20 @@
 
 @section('content')
 
-
+<?php
+function DateThai($strDate)
+{
+$strYear = date("Y",strtotime($strDate))+543;
+$strMonth= date("n",strtotime($strDate));
+$strDay= date("j",strtotime($strDate));
+$strHour= date("H",strtotime($strDate));
+$strMinute= date("i",strtotime($strDate));
+$strSeconds= date("s",strtotime($strDate));
+$strMonthCut = Array("","ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค.");
+$strMonthThai=$strMonthCut[$strMonth];
+return "$strDay $strMonthThai $strYear";
+}
+ ?>
 
         <div class="content">
             <div class="container-fluid">
@@ -34,7 +47,8 @@
                                   <tr>
                                     <th>ID</th>
                                     <th>ชื่อหมวดหมู่</th>
-                                    <th>จำนวนชนิดสินค้า</th>
+                                    <th>ชนิดสินค้า</th>
+                                    <th>สินค้าทั้งหมด</th>
                                     <th>วันที่ส้ราง</th>
                                     <th>จัดการ</th>
                                   </tr>
@@ -46,7 +60,8 @@
                                         <td>{{$u->category_id}}</td>
                                         <td>{{$u->cat_name}}</td>
                                         <td>{{$u->options}}</td>
-                                        <td>{{$u->created_at}}</td>
+                                        <td>{{$u->options2}}</td>
+                                        <td><?php echo DateThai($u->category_id); ?></td>
                                         <td>
 
                                           <a style="float:left; margin-right:8px;" title="แก้ไขหมวดหมู่" class="btn btn-primary btn-xs" href="{{url('category/'.$u->category_id.'/edit')}}" role="button"><i class="fa fa-cog "></i> </a>

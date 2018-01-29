@@ -27,11 +27,16 @@
                         <li><a href="#">Another notification</a></li>
                       </ul>
                 </li>
-    <li>
-                    <a href="#">
+    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
         <i class="ti-settings"></i>
         <p>Settings</p>
+        <b class="caret"></b>
                     </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="{{url('user_profile')}}">User Profile</a></li>
+                      <li><a href="{{url('logout')}}">Sign out</a></li>
+                    </ul>
                 </li>
             </ul>
 

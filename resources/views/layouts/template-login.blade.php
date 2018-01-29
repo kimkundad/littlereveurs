@@ -52,11 +52,11 @@
         <!-- Theme Custom CSS -->
         <link rel="stylesheet" href="{{asset('/assets/stylesheets/theme-custom.css')}}">
 
-        <!-- Head Libs -->
+        <!-- Head Libs secure_asset -->
         <script src="{{asset('/assets/vendor/modernizr/modernizr.js')}}"></script>
         <style type="text/css">
         body{
-                background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url({{secure_asset('./assets/img/bg/Fonds.jpeg')}}) no-repeat center bottom;
+                background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url({{asset('./assets/img/bg/Fonds.jpeg')}}) no-repeat center bottom;
                 background-size: cover;
                 color: #ffffff;
             }

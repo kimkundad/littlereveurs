@@ -95,6 +95,27 @@ img {
                                                       @endif
                                                   </div>
 
+                                                  <div class="form-group{{ $errors->has('price_1') ? ' has-error' : '' }}">
+                                                      <label>ราคาปลีก สินค้า*</label>
+                                                      <input type="number" class="form-control border-input" name="price_1" value="{{$objs->price_1}}">
+                                                      @if ($errors->has('price_1'))
+                                                          <span class="help-block">
+                                                              <strong>กรุณาใส่ ราคาปลีก ของคุณด้วย</strong>
+                                                          </span>
+                                                      @endif
+                                                  </div>
+
+                                                  <div class="form-group{{ $errors->has('price_2') ? ' has-error' : '' }}">
+                                                      <label>ราคาส่ง สินค้า*</label>
+                                                      <input type="number" class="form-control border-input" name="price_2" value="{{$objs->price_2}}">
+                                                      @if ($errors->has('price_2'))
+                                                          <span class="help-block">
+                                                              <strong>กรุณาใส่ ราคาส่ง ของคุณด้วย</strong>
+                                                          </span>
+                                                      @endif
+                                                  </div>
+
+
                                                   <hr>
                                                   <div style="text-align: center">
                                                     <img src="data:image/png;base64,{{DNS1D::getBarcodePNG($objs->product_code, 'C39+')}}" alt="barcode" />

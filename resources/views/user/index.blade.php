@@ -17,7 +17,7 @@
                       <div class="card">
                           <div class="header">
 
-                              <p class="category">คุณสามารถเพิ่มสินค้า และสามารถซ่อมจากการแชร์ข้อมูลสินค้าได้</p>
+                              <p class="category">คุณสามารถเพิ่ม admin ให้กับ user อื่นได้</p>
                           </div>
 
 
@@ -27,56 +27,45 @@
 
                           <div class="content table-responsive table-full-width">
 
-                            <a class="btn btn-default " href="{{url('product/create')}}" role="button" style="margin-left:12px;">
-                            <i class="fa fa-plus"></i> เพิ่มสินค้าใหม่</a>
+
 
                               <table class="table table-striped">
                                 <thead>
                                   <tr>
                                     <th>ID</th>
-                                    <th>ชื่อสินค้า</th>
-                                    <th>หมวดหมู่</th>
-                                    <th>คงเหลือ</th>
+                                    <th>ชื่อผู้ใช้</th>
+                                    <th>แหล่งที่มา</th>
+                                    <th>Email</th>
                                     <th>สถานะ</th>
-                                    <th>จัดการ</th>
+
                                   </tr>
                                 </thead>
                                   <tbody>
 
-
-              @if($objs)
-                @foreach($objs as $u)
+                                    @if($objs)
+                                    @foreach($objs as $u)
                                       <tr id="{{$u->id}}">
-                                        <td>{{$u->product_code}}</td>
-                                        <td>{{$u->product_name}}</td>
-                                        <td>{{$u->cat_name}}</td>
-                                        <td>{{$u->product_sum}}</td>
+                                        <td>{{$u->id}}</td>
+                                        <td>{{$u->name}}</td>
+                                        <td>{{$u->provider}}</td>
+                                        <td>{{$u->email}}</td>
                                         <td>
 
                                           <input type="checkbox" name="my-checkbox" id="switch-size" data-size="mini"
-                         @if($u->product_status == 1)
+                         @if($u->is_admin == true)
                           checked="checked"
                           @endif
                           />
                                         </td>
-                                        <td>
 
-                                          <a style="float:left; margin-right:5px;" title="แก้ไขหมวดหมู่" class="btn btn-primary btn-xs" href="{{url('product/'.$u->id.'/edit')}}" role="button"><i class="fa fa-cog "></i> </a>
-
-                                          <form  action="" method="post" onsubmit="return(confirm('Do you want Delete'))">
-                                            <input type="hidden" name="_method" value="DELETE">
-                                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                            <button type="submit" title="ลบหมวดหมู่" class="btn btn-danger btn-xs"><i class="fa fa-times "></i></button>
-                                          </form>
-
-                                          </td>
                                       </tr>
-                @endforeach
-              @endif
+                                      @endforeach
+                                                    @endif
+
 
                                   </tbody>
                               </table>
-                              {{ $objs->links() }}
+
                           </div>
                       </div>
                   </div>
@@ -122,9 +111,9 @@ $("[name='my-checkbox']").on('switchChange.bootstrapSwitch',function(){
 
     $.ajax({
             type:'POST',
-            url:'{{url('api/post_status')}}',
+            url:'{{url('api/user_status')}}',
             headers: {'X-CSRF-TOKEN': '{{ csrf_token() }}' },
-            data: { "product_id" : product_id },
+            data: { "user_id" : product_id },
             success: function(data){
               if(data.data.success){
 

@@ -19,14 +19,15 @@ class CategoryController extends Controller
       $shop = DB::table('categories')->select(
             'categories.*'
             )
-            ->where('user_id', Auth::user()->id)
             ->orderBy('category_id', 'asc')
             ->get();
 
             foreach ($shop as $obj) {
 
                 $options = DB::table('products')->where('cat_id',$obj->category_id)->count();
+                $options2 = DB::table('products')->where('cat_id',$obj->category_id)->sum('products.product_sum');
                 $obj->options = $options;
+                $obj->options2 = $options2;
             }
 
       $data['objs'] = $shop;
@@ -89,7 +90,6 @@ class CategoryController extends Controller
       $obj = DB::table('categories')->select(
             'categories.*'
             )
-            ->where('user_id', Auth::user()->id)
             ->where('category_id', $id)
             ->orderBy('category_id', 'asc')
             ->first();
