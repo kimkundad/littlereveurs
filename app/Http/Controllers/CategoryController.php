@@ -127,6 +127,23 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+      $get_pro = DB::table('products')->select(
+            'products.*'
+            )
+            ->where('cat_id',$id)
+            ->get();
+
+            foreach ($get_pro as $obj) {
+
+              DB::table('products')
+              ->where('cat_id', $obj->cat_id)
+              ->update(['cat_id' => 1]);
+
+            }
+
+      $obj = category::find($id);
+      $obj->delete();
+      return redirect(url('category'))->with('del_category','คุณทำการลบอสังหา สำเร็จ');
     }
 }

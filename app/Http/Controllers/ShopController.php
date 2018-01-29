@@ -69,13 +69,7 @@ class ShopController extends Controller
        'shop_type' => 'required',
        'address' => 'required',
        'shop_phone' => 'required',
-       'provience_id' => 'required',
-       'lat' => 'required',
-       'lng' => 'required',
-       'shop_sale' => 'required',
-       'shop_code' => 'required',
-       'channel' => 'required',
-       'shop_area' => 'required'
+       'provience_id' => 'required'
       ]);
 
          $image = $request->file('file_source');
@@ -95,12 +89,6 @@ class ShopController extends Controller
          $package->shop_address = $request['address'];
          $package->shop_phone = $request['shop_phone'];
          $package->provience_id = $request['provience_id'];
-         $package->lat = $request['lat'];
-         $package->lng = $request['lng'];
-         $package->shop_sale = $request['shop_sale'];
-         $package->shop_code = $request['shop_code'];
-         $package->channel = $request['channel'];
-         $package->shop_area = $request['shop_area'];
          $package->detail_shop = $request['detail_shop'];
          $package->image_shop = $input['imagename'];
          $package->save();
@@ -260,13 +248,7 @@ class ShopController extends Controller
            'shop_type' => 'required',
            'address' => 'required',
            'shop_phone' => 'required',
-           'provience_id' => 'required',
-           'lat' => 'required',
-           'lng' => 'required',
-           'shop_sale' => 'required',
-           'shop_code' => 'required',
-           'channel' => 'required',
-           'shop_area' => 'required'
+           'provience_id' => 'required'
           ]);
 
           $package = shop::find($id);
@@ -277,12 +259,6 @@ class ShopController extends Controller
           $package->shop_address = $request['address'];
           $package->shop_phone = $request['shop_phone'];
           $package->provience_id = $request['provience_id'];
-          $package->lat = $request['lat'];
-          $package->lng = $request['lng'];
-          $package->shop_sale = $request['shop_sale'];
-          $package->shop_code = $request['shop_code'];
-          $package->channel = $request['channel'];
-          $package->shop_area = $request['shop_area'];
           $package->detail_shop = $request['detail_shop'];
           $package->save();
 
@@ -297,13 +273,7 @@ class ShopController extends Controller
            'shop_type' => 'required',
            'address' => 'required',
            'shop_phone' => 'required',
-           'provience_id' => 'required',
-           'lat' => 'required',
-           'lng' => 'required',
-           'shop_sale' => 'required',
-           'shop_code' => 'required',
-           'channel' => 'required',
-           'shop_area' => 'required'
+           'provience_id' => 'required'
           ]);
 
 
@@ -322,12 +292,6 @@ class ShopController extends Controller
          $package->shop_address = $request['address'];
          $package->shop_phone = $request['shop_phone'];
          $package->provience_id = $request['provience_id'];
-         $package->lat = $request['lat'];
-         $package->lng = $request['lng'];
-         $package->shop_sale = $request['shop_sale'];
-         $package->shop_code = $request['shop_code'];
-         $package->channel = $request['channel'];
-         $package->shop_area = $request['shop_area'];
          $package->detail_shop = $request['detail_shop'];
          $package->image_shop = $input['imagename'];
          $package->save();

@@ -180,85 +180,6 @@
                                   </div>
 
 
-                                  <div class="row">
-                                      <div class="col-md-12" style="padding: 12px;">
-                                          <div class="form-group">
-                                              <label>Location*</label>
-                                              <div id="map_canvas" style="width:100%; border:0; height:316px;" frameborder="0"></div>
-                                          </div>
-                                      </div>
-                                      <div class="col-md-6" style="padding: 12px;">
-                                          <div class="form-group{{ $errors->has('lat') ? ' has-error' : '' }}">
-                                              <label>latitude*</label>
-                                              <input type="text" class="form-control border-input" name="lat" id="lat" size="10" value="{{$objs->lat}}" required>
-
-                                          </div>
-                                      </div>
-                                      <div class="col-md-6" style="padding: 12px;">
-                                          <div class="form-group{{ $errors->has('lng') ? ' has-error' : '' }}">
-                                              <label>longitude*</label>
-                                              <input type="text" class="form-control border-input" name="lng" id="lng" size="10" value="{{$objs->lng}}" required>
-
-                                          </div>
-                                      </div>
-                                  </div>
-
-
-
-
-                                  <div class="row">
-                                      <div class="col-md-4">
-                                          <div class="form-group{{ $errors->has('shop_sale') ? ' has-error' : '' }}">
-                                              <label>ยอดขายรายเดือน*</label>
-                                              <input type="number" class="form-control border-input" name="shop_sale" placeholder="150,000" value="{{$objs->shop_sale}}">
-                                              @if ($errors->has('shop_sale'))
-                                                  <span class="help-block">
-                                                      <strong>กรุณาใส่ ยอดขายรายเดือน ของคุณด้วย</strong>
-                                                  </span>
-                                              @endif
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="form-group{{ $errors->has('shop_code') ? ' has-error' : '' }}">
-                                              <label>รหัสสาขา*</label>
-                                              <input type="text" class="form-control border-input" name="shop_code" placeholder="ZX-1540000" value="{{$objs->shop_code}}">
-                                              @if ($errors->has('shop_code'))
-                                                  <span class="help-block">
-                                                      <strong>กรุณาใส่ รหัสสาขา ของคุณด้วย</strong>
-                                                  </span>
-                                              @endif
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="form-group{{ $errors->has('channel') ? ' has-error' : '' }}">
-                                              <label>ช่องทางขาย*</label>
-                                              <input type="text" class="form-control border-input" name="channel" placeholder="สื่อโฆษณาทีวี" value="{{$objs->channel}}">
-                                              @if ($errors->has('channel'))
-                                                  <span class="help-block">
-                                                      <strong>กรุณาใส่ ช่องทางขาย ของคุณด้วย</strong>
-                                                  </span>
-                                              @endif
-                                          </div>
-                                      </div>
-                                  </div>
-
-
-
-                                  <div class="row">
-                                      <div class="col-md-12">
-                                          <div class="form-group{{ $errors->has('shop_area') ? ' has-error' : '' }}">
-                                              <label>พื้นที่/AREA</label>
-                                              <textarea rows="5" class="form-control border-input" name="shop_area" placeholder="Here can be your Area" value="Mike">{{$objs->shop_area}}</textarea>
-                                              @if ($errors->has('shop_area'))
-                                                  <span class="help-block">
-                                                      <strong>กรุณาใส่ พื้นที่ ของคุณด้วย</strong>
-                                                  </span>
-                                              @endif
-                                          </div>
-                                      </div>
-                                  </div>
-
-
 
 
 
@@ -314,16 +235,16 @@ $(document).ready(function() {
 
 </script>
 
-<script type="text/javascript" src='https://maps.google.com/maps/api/js?key=AIzaSyA89Rb8Kz1ArY3ks6sSvz2cNrn66CHKDiA&libraries=places&sensor=false'></script>
+<!--<script type="text/javascript" src='https://maps.google.com/maps/api/js?key=AIzaSyA89Rb8Kz1ArY3ks6sSvz2cNrn66CHKDiA&libraries=places&sensor=false'></script>
 <script type="text/javascript">
       var map;
       var geocoder;
-      var mapOptions = { center: new google.maps.LatLng({{$objs->lat}}, {{$objs->lat}}), zoom: 2,
+      var mapOptions = { center: new google.maps.LatLng({{ old( 'lat', 0.0) }}, {{ old( 'lng', 0.0) }}), zoom: 2,
         mapTypeId: google.maps.MapTypeId.ROADMAP };
 
       function initialize() {
 var myOptions = {
-                center: new google.maps.LatLng(13.7211075, 100.5904873 ),
+                center: new google.maps.LatLng({{ old( 'lat', 13.7211075) }}, {{ old( 'lng', 100.5904873) }} ),
                 zoom: 10,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
@@ -331,31 +252,16 @@ var myOptions = {
             geocoder = new google.maps.Geocoder();
             var map = new google.maps.Map(document.getElementById("map_canvas"),
             myOptions);
-
-
-            var myLatlng = new google.maps.LatLng({{$objs->lat}},{{$objs->lng}});
-            var myOptions = {
-                zoom: 17,
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-             map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-             var marker = new google.maps.Marker({
-                 position: myLatlng,
-                 map: map
-            });
-
-
             google.maps.event.addListener(map, 'click', function(event) {
                 placeMarker(event.latLng);
             });
 
             var marker;
             function placeMarker(location) {
-                if(marker){ //on vérifie si le marqueur existe
-                    marker.setPosition(location); //on change sa position
+                if(marker){
+                    marker.setPosition(location);
                 }else{
-                    marker = new google.maps.Marker({ //on créé le marqueur
+                    marker = new google.maps.Marker({
                         position: location,
                         map: map
                     });
@@ -364,15 +270,6 @@ var myOptions = {
                 document.getElementById('lng').value=location.lng();
                 getAddress(location);
             }
-
-
-
-
-
-
-
-
-
 
       function getAddress(latLng) {
         geocoder.geocode( {'latLng': latLng},
@@ -392,7 +289,7 @@ var myOptions = {
         }
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+</script> -->
 
 @if ($message = Session::get('edit_success'))
 <script type="text/javascript">
