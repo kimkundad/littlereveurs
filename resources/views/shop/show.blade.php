@@ -45,10 +45,6 @@ h5, .h5 {
                               <div class="author">
                                 <img class="avatar border-white" src="{{url('assets/blog/'.$objs->image_shop)}}" alt="...">
 
-
-                                <h4 class="title">#{{$objs->shop_code}}<br>
-
-                                </h4>
                               </div>
 
                               <h5>กลุ่มสินค้า
