@@ -42,7 +42,6 @@ class ProductController extends Controller
       $shop = DB::table('categories')->select(
             'categories.*'
             )
-            ->where('user_id', Auth::user()->id)
             ->orderBy('category_id', 'asc')
             ->get();
 
@@ -51,7 +50,6 @@ class ProductController extends Controller
       $shop_id = DB::table('shops')->select(
             'shops.*'
             )
-            ->where('user_id', Auth::user()->id)
             ->orderBy('id', 'desc')
             ->get();
 
@@ -152,7 +150,6 @@ class ProductController extends Controller
         $cat = DB::table('categories')->select(
               'categories.*'
               )
-              ->where('user_id', Auth::user()->id)
               ->orderBy('category_id', 'asc')
               ->get();
 
@@ -162,7 +159,6 @@ class ProductController extends Controller
         $shop_id = DB::table('shops')->select(
               'shops.*'
               )
-              ->where('user_id', Auth::user()->id)
               ->orderBy('id', 'desc')
               ->get();
 
