@@ -153,7 +153,7 @@ img {
 
                                                   <div class="form-group{{ $errors->has('discount') ? ' has-error' : '' }}">
                                                       <label><i class="ti-gift"></i> ส่วนลด สินค้า ( ใส่ไม่ใส่ก็ได้ )</label>
-                                                      <input type="number" class="form-control border-input" name="product_total" value="{{ $stock->discount }}">
+                                                      <input type="number" class="form-control border-input" name="discount" value="{{ $stock->discount }}">
 
                                                   </div>
 
