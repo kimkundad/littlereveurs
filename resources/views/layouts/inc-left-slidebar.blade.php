@@ -7,7 +7,7 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <img id="LockUserPicture" class="img-responsive" src="{{asset('./assets/img/logo/linchak-logo.png')}}" height="60px;">
+                <img id="LockUserPicture" class="img-responsive" src="{{secure_asset('./assets/img/logo/linchak-logo.png')}}" height="60px;">
             </div>
 
             <ul class="nav">

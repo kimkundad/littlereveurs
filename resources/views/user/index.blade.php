@@ -111,7 +111,7 @@ $("[name='my-checkbox']").on('switchChange.bootstrapSwitch',function(){
 
     $.ajax({
             type:'POST',
-            url:'{{asset('api/user_status')}}',
+            url:'{{secure_asset('api/user_status')}}',
             headers: {'X-CSRF-TOKEN': '{{ csrf_token() }}' },
             data: { "user_id" : product_id },
             success: function(data){
