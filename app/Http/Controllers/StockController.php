@@ -90,6 +90,7 @@ class StockController extends Controller
       $package->product_total = $request['product_total'];
       $package->sale_type = $request['sale_type'];
       $package->detail = $request['product_detail'];
+      $package->discount = $request['discount'];
       $package->save();
 
       $id = $request['product_id'];
@@ -194,6 +195,7 @@ class StockController extends Controller
                     $package->product_id = $request['product_id'];
                     $package->sale_type = $request['sale_type'];
                     $package->detail = $request['product_detail'];
+                    $package->discount = $request['discount'];
                     $package->save();
 
                     return redirect(url('stock/'.$id.'/edit'))->with('success_edit','เพิ่มร้านค้าสำเร็จแล้วค่ะ');
@@ -205,6 +207,7 @@ class StockController extends Controller
                     $package->product_total = $request['product_total'];
                     $package->sale_type = $request['sale_type'];
                     $package->detail = $request['product_detail'];
+                    $package->discount = $request['discount'];
                     $package->save();
 
                     $sum = $stock_c->product_total - $request['product_total'];
@@ -221,6 +224,7 @@ class StockController extends Controller
                     $package->product_total = $request['product_total'];
                     $package->sale_type = $request['sale_type'];
                     $package->detail = $request['product_detail'];
+                    $package->discount = $request['discount'];
                     $package->save();
 
                     $sum = $request['product_total'] - $stock_c->product_total;
