@@ -64,14 +64,6 @@ h5, .h5 {
                                   <p class="category">{{$objs->shop_phone}}</p>
                               </h5>
 
-
-                              <h5>ช่องทางขาย
-                                  <p class="category">{{$objs->channel}}</p>
-                              </h5>
-                              <h5>พื้นที่
-                                  <p class="category">{{$objs->shop_area}}</p>
-                              </h5>
-
                               <h5>รายละเอียด
                                   <p class="category">{{$objs->detail_shop}}</p>
                               </h5>
