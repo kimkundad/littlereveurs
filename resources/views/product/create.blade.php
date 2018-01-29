@@ -117,6 +117,24 @@ img {
                                                   </div>
 
 
+                                                  <div class="form-group{{ $errors->has('product_size') ? ' has-error' : '' }}">
+                                                      <label>เลือก size สินค้า*</label>
+                                                      <select name="product_size" class="form-control border-input" required>
+
+                    								                      <option value="S">-- Size S --</option>
+                                                          <option value="M">-- Size M --</option>
+                                                          <option value="L">-- Size L --</option>
+                                                          <option value="XL">-- Size XL --</option>
+
+                    								                    </select>
+                                                      @if ($errors->has('product_size'))
+                                                          <span class="help-block">
+                                                              <strong>กรุณา เลือก size สินค้า ของคุณด้วย</strong>
+                                                          </span>
+                                                      @endif
+                                                  </div>
+
+
                                                   <div class="form-group{{ $errors->has('shop_name') ? ' has-error' : '' }}">
                                                       <label>เลือกร้านค้า*</label>
                                                       <select name="shop_name" class="form-control border-input" required>

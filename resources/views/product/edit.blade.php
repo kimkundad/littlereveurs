@@ -116,6 +116,32 @@ img {
                                                   </div>
 
 
+                                                  <div class="form-group{{ $errors->has('product_size') ? ' has-error' : '' }}">
+                                                      <label>เลือก size สินค้า*</label>
+                                                      <select name="product_size" class="form-control border-input" required>
+
+                    								                      <option value="S"  @if( $objs->roduct_size == 'S')
+                                        selected='selected'
+                                        @endif>-- Size S --</option>
+                                                          <option value="M" @if( $objs->roduct_size == 'M')
+                                        selected='selected'
+                                        @endif>-- Size M --</option>
+                                                          <option value="L" @if( $objs->roduct_size == 'L')
+                                        selected='selected'
+                                        @endif>-- Size L --</option>
+                                                          <option value="XL" @if( $objs->roduct_size == 'XL')
+                                        selected='selected'
+                                        @endif>-- Size XL --</option>
+
+                    								                    </select>
+                                                      @if ($errors->has('product_size'))
+                                                          <span class="help-block">
+                                                              <strong>กรุณา เลือก size สินค้า ของคุณด้วย</strong>
+                                                          </span>
+                                                      @endif
+                                                  </div>
+
+
                                                   <hr>
                                                   <div style="text-align: center">
                                                     <img src="data:image/png;base64,{{DNS1D::getBarcodePNG($objs->product_code, 'C39+')}}" alt="barcode" />

@@ -79,7 +79,8 @@ class ProductController extends Controller
        'product_detail' => 'required',
        'price_1' => 'required',
        'price_2' => 'required',
-       'shop_name' => 'required'
+       'shop_name' => 'required',
+       'product_size' => 'required'
       ]);
 
       $image = $request->file('image');
@@ -103,6 +104,7 @@ class ProductController extends Controller
      $package->shop_id = $request['shop_name'];
      $package->price_1 = $request['price_1'];
      $package->price_2 = $request['price_2'];
+     $package->product_size = $request['product_size'];
      $package->save();
 
  $the_id = $package->id;
@@ -194,7 +196,8 @@ class ProductController extends Controller
          'product_detail' => 'required',
          'price_1' => 'required',
          'price_2' => 'required',
-         'shop_name' => 'required'
+         'shop_name' => 'required',
+         'product_size' => 'required'
         ]);
 
         $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
@@ -216,6 +219,7 @@ class ProductController extends Controller
        $package->shop_id = $request['shop_name'];
        $package->price_1 = $request['price_1'];
        $package->price_2 = $request['price_2'];
+       $package->product_size = $request['product_size'];
        $package->save();
 
        $the_id = $request['id'];
@@ -233,7 +237,8 @@ class ProductController extends Controller
          'product_detail' => 'required',
          'price_1' => 'required',
          'price_2' => 'required',
-         'shop_name' => 'required'
+         'shop_name' => 'required',
+         'product_size' => 'required'
         ]);
 
 
@@ -247,6 +252,7 @@ class ProductController extends Controller
        $package->shop_id = $request['shop_name'];
        $package->price_1 = $request['price_1'];
        $package->price_2 = $request['price_2'];
+       $package->product_size = $request['product_size'];
        $package->save();
 
        $the_id = $request['id'];
