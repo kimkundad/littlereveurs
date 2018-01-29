@@ -72,8 +72,7 @@ class StockController extends Controller
       $this->validate($request, [
        'sale_type' => 'required',
        'product_id' => 'required',
-       'product_total' => 'required',
-       'product_detail' => 'required'
+       'product_total' => 'required'
       ]);
 
       $product = DB::table('products')->select(
@@ -172,8 +171,7 @@ class StockController extends Controller
       $this->validate($request, [
        'sale_type' => 'required',
        'product_id' => 'required',
-       'product_total' => 'required',
-       'product_detail' => 'required'
+       'product_total' => 'required'
       ]);
 
       $product = DB::table('products')->select(
