@@ -142,8 +142,11 @@ class CategoryController extends Controller
 
             }
 
-      $obj = category::find($id);
-      $obj->delete();
+            $obj = DB::table('categories')
+      ->where('categories.category_id', $id)
+      ->delete();
+
+      
       return redirect(url('category'))->with('del_category','คุณทำการลบอสังหา สำเร็จ');
     }
 }
