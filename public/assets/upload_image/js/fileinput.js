@@ -312,7 +312,7 @@
         '</div>';
     tClose = '<div class="close fileinput-remove">&times;</div>\n';
     tIcon = '<span class="glyphicon glyphicon-file kv-caption-icon"></span>';
-    tCaption = '<div tabindex="500" class="form-control file-caption {class}">\n' +
+    tCaption = '<div tabindex="500" class="form-control border-input file-caption {class}">\n' +
         '   <div class="file-caption-name"></div>\n' +
         '</div>\n';
     //noinspection HtmlUnknownAttribute

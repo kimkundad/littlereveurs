@@ -280,12 +280,12 @@ img {
                           <div class="content">
 
                             <form  method="POST" action="{{url('upload_more_pic')}}" enctype="multipart/form-data">
-                                      
+
                                           {{ csrf_field() }}
 
                                           <div class="row">
                                               <div class="col-md-12" style="padding-right: 15px;">
-                                                  <div class="form-group">
+
 
                             <div class="form-group">
 
@@ -304,7 +304,7 @@ img {
                 </div>
 
 
-                </div>
+
                 </div>
                 </div>
 
@@ -350,7 +350,7 @@ img {
 @section('scripts')
 
 <script src="{{url('assets/js/bootstrap-notify.js')}}"></script>
-<script src="{{URL::asset('assets/upload_image/js/fileinput.js')}}"></script>
+<script src="{{URL::asset('assets/upload_image/js/fileinput.js')}}?v1"></script>
 
 <script>
         $(document).ready(function () {
