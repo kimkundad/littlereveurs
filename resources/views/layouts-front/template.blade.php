@@ -12,7 +12,7 @@
     <meta name="googlebot" content="ALL">
 
     @section('ogtags')
-      @include('layouts.og_tags')
+      @include('layouts-front.og_tags')
     @show
 
 
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/png" href="{{url('assets/font-end/image/SiriSpace-icon-x.png')}}">
     <link rel="apple-touch-icon" type="image/x-icon" href="{{url('assets/font-end/image/SiriSpace-icon-x.png')}}">
 
-    @include('layouts.inc-style')
+    @include('layouts-front.inc-style')
     @yield('stylesheet')
 
 </head>
@@ -28,7 +28,7 @@
 
 
 
-    @include('layouts.inc-header')
+    @include('layouts-front.inc-header')
 
 
 
@@ -46,10 +46,10 @@
 
 
 
-    @include('layouts.inc-footer')
+    @include('layouts-front.inc-footer')
 
     <!-- JavaScripts -->
-    @include('layouts.inc-script')
+    @include('layouts-front.inc-script')
     @yield('scripts')
 
 
