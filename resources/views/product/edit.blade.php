@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('stylesheet')
-
+<link href="{{URL::asset('assets/upload_image/css/fileinput.css')}}" rel="stylesheet">
 <style>
         .box-upload-file {
             background-image: url('{{url('front/asset/img/bg-blue-2.png')}}');
@@ -257,6 +257,47 @@ img {
 
                       </div>
                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="col-md-6">
+                      <div class="card">
+                          <div class="header">
+                              <h4 class="title">รูปภาพประกอบ</h4>
+
+                          </div>
+
+
+                          <div class="content">
+
+                            <div class="form-group">
+                <label class="col-sm-3 control-label">รูปลายประกอบ <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                <label for="exampleInputFile">Image input</label>
+
+                <input id="file-0a" class="file " type="file" name="product_image[]" accept="image/*" multiple>
+
+
+
+                </div>
+                </div>
+
+                
+                            </div>
+                      </div>
+                  </div>
+
+
+
                 </div>
 
 
@@ -280,7 +321,7 @@ img {
 @section('scripts')
 
 <script src="{{url('assets/js/bootstrap-notify.js')}}"></script>
-
+<script src="{{URL::asset('assets/upload_image/js/fileinput.js')}}"></script>
 
 <script>
         $(document).ready(function () {
