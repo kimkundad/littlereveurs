@@ -371,6 +371,8 @@ img {
 
 
 </div>
+<hr>
+<br>
 <button type="submit" class="btn btn-danger pull-right" style="margin-top:-15px;">ลบรูปภาพที่เลือกไว้</button>
 </form>
 
