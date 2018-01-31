@@ -173,7 +173,7 @@ class ProductController extends Controller
 
         $shop = DB::table('products')->select(
               'products.*',
-              'product.id as pro_id',
+              'products.id as pro_id',
               'categories.*',
               'shops.*'
               )
