@@ -153,6 +153,7 @@ class ProductController extends Controller
               'user_id' => Auth::user()->id,
           ];
 
+
         }
         product_image::insert($admins);
       }
