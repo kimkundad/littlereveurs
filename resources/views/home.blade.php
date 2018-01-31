@@ -10,9 +10,9 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 @stop
 
 @section('ogtags')
-    @include('layouts.og_tags', ['title' => 'The Original Real Estate CASHBACK Network | Siri Space', 'description' => 'SIRISPACE.com is a real estate company located in Bangkok,
+    @include('layouts-front.og_tags', ['title' => 'The Original Real Estate CASHBACK Network | Siri Space', 'description' => 'SIRISPACE.com is a real estate company located in Bangkok,
     Thailand that helps connect property hunters with the most current database of commercial and residential properties for sale and rent, with property news and all the resources a buyer',
-    'image' => url('assets/image/sirispace_facebook.png')])
+    'image' => url('assets/font-end/image/sirispace_facebook.png')])
 @stop
 
 
