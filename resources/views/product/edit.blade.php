@@ -279,19 +279,44 @@ img {
 
                           <div class="content">
 
+                            <form  method="POST" action="{{$url}}" enctype="multipart/form-data">
+                                          {{ method_field($method) }}
+                                          {{ csrf_field() }}
+
+                                          <div class="row">
+                                              <div class="col-md-12" style="padding-right: 15px;">
+                                                  <div class="form-group{{ $errors->has('product_name') ? ' has-error' : '' }}">
+
                             <div class="form-group">
-                <label class="col-sm-3 control-label">รูปลายประกอบ <span class="text-danger">*</span></label>
-                <div class="col-sm-9">
+
+
                 <label for="exampleInputFile">Image input</label>
 
                 <input id="file-0a" class="file " type="file" name="product_image[]" accept="image/*" multiple>
 
 
 
+
+                </div>
+
+
+                </div>
                 </div>
                 </div>
 
-                
+              </form>
+
+
+
+
+
+
+
+
+
+
+
+
                             </div>
                       </div>
                   </div>
