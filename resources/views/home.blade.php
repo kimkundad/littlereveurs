@@ -104,8 +104,8 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
           <div class="row">
             <br>
         <div class="col-md-12 " >
-          <h3>SIRI RECOMMEND</h3>
-          <p>Find the hottest property in Bangkok</p>
+          <h3>Little Reveurs</h3>
+          <p>ขายตุ๊กตา น่ารัก น่ากอด ขนนุ่ม ขนฟู เหมาะสำหรับเป็นของขวัญในทุกโอกาสพิเศษ</p>
 
 
 
