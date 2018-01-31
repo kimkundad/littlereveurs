@@ -335,7 +335,7 @@ img {
 
 
 
-                      <form  action="{{url('admin/property_image_del/')}}" method="post" onsubmit="return(confirm('Do you want Delete'))">
+                      <form  action="{{url('property_image_del')}}" method="post" onsubmit="return(confirm('Do you want Delete'))">
   <input type="hidden" name="_method" value="POST">
    <input type="hidden" name="_token" value="{{ csrf_token() }}">
    <input type="hidden" name="pro_id" value="{{$objs->pro_id}}">
@@ -456,6 +456,46 @@ img {
     $.notify({
         icon: "ti-gift",
         message: "ยินดีด้วย ได้ทำการเพิ่มข้อมูล สำเร็จเรียบร้อยแล้วค่ะ"
+
+      },{
+          type: type[color],
+          timer: 2000,
+          placement: {
+              from: 'top',
+              align: 'right'
+          }
+      });
+    </script>
+    @endif
+
+
+
+    @if ($message = Session::get('add_gallery_success'))
+    <script type="text/javascript">
+    type = ['success'];
+    color = Math.floor((Math.random() * 4) + 1);
+    $.notify({
+        icon: "ti-gift",
+        message: "ยินดีด้วย ได้ทำการเพิ่มข้อมูล สำเร็จเรียบร้อยแล้วค่ะ"
+
+      },{
+          type: type[color],
+          timer: 2000,
+          placement: {
+              from: 'top',
+              align: 'right'
+          }
+      });
+    </script>
+    @endif
+    
+    @if ($message = Session::get('del_gallery_success'))
+    <script type="text/javascript">
+    type = ['success'];
+    color = Math.floor((Math.random() * 4) + 1);
+    $.notify({
+        icon: "ti-gift",
+        message: "ยินดีด้วย ได้ทำการลบข้อมูล สำเร็จเรียบร้อยแล้วค่ะ"
 
       },{
           type: type[color],

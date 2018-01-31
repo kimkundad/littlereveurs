@@ -162,6 +162,45 @@ class ProductController extends Controller
 
     }
 
+
+
+
+
+
+
+
+    public function property_image_del(Request $request){
+$property_id = $request['pro_id'];
+
+$gallary = $request->get('product_image');
+
+if (sizeof($gallary) > 0) {
+
+ for ($i = 0; $i < sizeof($gallary); $i++) {
+
+   $objs = DB::table('product_images')
+     ->where('id', $gallary[$i])
+     ->first();
+
+     $file_path = 'assets/gallery_product/'.$objs->image;
+     unlink($file_path);
+     DB::table('product_images')->where('id', $objs->id)->delete();
+ /*  $path = 'assets/cusimage/';
+   $filename = time()."-".$gallary[$i]->getClientOriginalName();
+   $gallary[$i]->move($path, $filename); */
+
+
+
+
+ }
+
+
+}
+//dd($objs);
+return redirect(url('product/'.$property_id.'/edit'))->with('del_gallery_success','คุณทำการเพิ่มอสังหา สำเร็จ');
+
+}
+
     /**
      * Show the form for editing the specified resource.
      *
