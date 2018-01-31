@@ -204,8 +204,8 @@ class ProductController extends Controller
 
         $data['shop_id'] = $shop_id;
 
-        $img_all = DB::table('product_image')->select(
-            'product_image.*'
+        $img_all = DB::table('product_images')->select(
+            'product_images.*'
             )
             ->where('product_id', $id)
             ->get();
