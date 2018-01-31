@@ -223,7 +223,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 </style>
 
         <div class="col-xs-12">
-                <div class="view-more-wrapper"><a href="{{url('siri_recommend')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
+                <div class="view-more-wrapper"><a href="#" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
               </div>
 
 
@@ -344,7 +344,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
             </div>
 
             <div class="col-xs-12">
-                    <div class="view-more-wrapper"><a href="{{url('recent_updates')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
+                    <div class="view-more-wrapper"><a href="#" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
                   </div>
 
         </div>
