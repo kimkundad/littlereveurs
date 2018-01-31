@@ -16,6 +16,16 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 @stop
 
 
+
+
+@section('content')
+
+
+
+
+
+
+
 <style>
 .list_menu_y {
     -webkit-appearance: none;
@@ -68,16 +78,6 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 
 /*  */
 </style>
-
-@section('content')
-
-
-
-
-
-
-
-
 
 
 
