@@ -13,15 +13,7 @@
 
 Route::auth();
 
-Route::get('/', function () {
-
-  if(Auth::check()){
-    return Redirect::to('12121');
-  }else{
-    return view('auth.login');
-  }
-
-});
+Route::get('/', 'HomeController@index');
 
 Auth::routes();
 
