@@ -28,7 +28,7 @@
 
 
 
-    @include('layouts-front.inc-header')
+  <!--   @include('layouts-front.inc-header') -->
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-    @include('layouts-front.inc-footer')
+  <!--  @include('layouts-front.inc-footer') -->
 
     <!-- JavaScripts -->
     @include('layouts-front.inc-script')
