@@ -120,13 +120,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
                               <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
                               <a href="#">
                               <img src="{{url('assets/font-end/image/PIC_0014-350.jpg')}}">
-                              <div class="g_l_box">
-                                    <div class="t_white">
-                                    <p>
-                                  <b class="t18 t_white">฿80000</b>
-                                    </p>
-                                      </div>
-                                  </div>
+
                               </a></div>
                               <div class="caption" style="padding: 3px;">
                                 <div class="descript bold">
@@ -136,7 +130,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
                                   2+1 bedrooms 3 bathrooms on 2...                            </div>
 
                                 <div class="descript" style="height: 20px;">
-                                  <span style="color: #e03753; font-size: 12px;"><i class="fa fa-map-marker"></i> Khlong Toei</span>
+                                  <span style="color: #e03753; font-size: 12px;"><i class="fa fa-map-marker"></i> 750 บาท</span>
                                   <div class="descript-t">
                                   <div class="postMetaInline-authorLockup">
 
