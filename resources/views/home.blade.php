@@ -93,7 +93,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 <div class="content-section-b">
         <div class="container" >
 
-          <div class="row ">
+          <div class="row hidden-sm hidden-xs">
         <div class="col-md-12 " >
           <a href="#" style="width:100%;display:block;">
             <img src="{{url('assets/font-end/image/valent uganda hello.jpg')}}" class="img-responsive" style="border: 1px solid #e0e0e0; margin: 0 auto; height:180px;">
