@@ -234,7 +234,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 <section class="promo_full">
 			<div class="promo_full_wp magnific">
 				<div>
-					<h3 style="height:53px;">&nbsp</h3>
+					<h3 style="height:83px;">&nbsp</h3>
 					<h4 style="font-size: 28px;">
 						Welcome to your new home...
 					</h4>
