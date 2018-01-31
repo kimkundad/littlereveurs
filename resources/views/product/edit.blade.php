@@ -350,7 +350,7 @@ img {
 @section('scripts')
 
 <script src="{{url('assets/js/bootstrap-notify.js')}}"></script>
-<script src="{{URL::asset('assets/upload_image/js/fileinput.js')}}?v1"></script>
+<script src="{{URL::asset('assets/upload_image/js/fileinput.js')}}?v1.2"></script>
 
 <script>
         $(document).ready(function () {

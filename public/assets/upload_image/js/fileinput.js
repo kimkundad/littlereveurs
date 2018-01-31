@@ -2626,7 +2626,7 @@
         browseClass: 'btn btn-primary',
         removeIcon: '<i class="ti-trash"></i>',
         removeClass: 'btn btn-default',
-        cancelIcon: '<i class="glyphicon glyphicon-ban-circle"></i>',
+        cancelIcon: '<i class="ti-spray"></i>',
         cancelClass: 'btn btn-default',
         uploadIcon: '<i class="ti-upload"></i>',
         uploadClass: 'btn btn-default',
