@@ -279,13 +279,13 @@ img {
 
                           <div class="content">
 
-                            <form  method="POST" action="{{$url}}" enctype="multipart/form-data">
-                                          {{ method_field($method) }}
+                            <form  method="POST" action="{{url('upload_more_pic')}}" enctype="multipart/form-data">
+                                      
                                           {{ csrf_field() }}
 
                                           <div class="row">
                                               <div class="col-md-12" style="padding-right: 15px;">
-                                                  <div class="form-group{{ $errors->has('product_name') ? ' has-error' : '' }}">
+                                                  <div class="form-group">
 
                             <div class="form-group">
 
@@ -293,10 +293,14 @@ img {
                 <label for="exampleInputFile">Image input</label>
 
                 <input id="file-0a" class="file " type="file" name="product_image[]" accept="image/*" multiple>
+                <input type="hidden" name="pro_id" class="form-control" value="{{ $objs->pro_id }}" required>
 
 
 
+                </div>
 
+                <div class="">
+                    <button type="submit" class="btn btn-info btn-fill btn-wd">อัพโหลดรูปภาพ</button>
                 </div>
 
 

@@ -8,6 +8,7 @@ use App\product;
 use Illuminate\Support\Facades\DB;
 use Intervention\Image\ImageManagerStatic as Image;
 use \Milon\Barcode\DNS1D;
+use App\product_image;
 
 class ProductController extends Controller
 {
@@ -125,6 +126,41 @@ class ProductController extends Controller
         //
     }
 
+
+
+    public function upload_more_pic(Request $request){
+
+      $this->validate($request, [
+           'product_image' => 'required',
+           'pro_id' => 'required'
+       ]);
+       $pro_id = $request['pro_id'];
+       $gallary = $request->file('product_image');
+
+
+       if (sizeof($gallary) > 1) {
+
+        for ($i = 0; $i < sizeof($gallary); $i++) {
+
+          $path = 'assets/gallery_product/';
+          $filename = time()."-".$gallary[$i]->getClientOriginalName();
+          $gallary[$i]->move($path, $filename);
+
+
+          $admins[] = [
+              'product_id' => $pro_id,
+              'image' => $filename,
+              'user_id' => Auth::user()->id,
+          ];
+
+        }
+        product_image::insert($admins);
+      }
+      return redirect(url('product/'.$pro_id.'/edit'))->with('add_gallery_success','คุณทำการเพิ่มอสังหา สำเร็จ');
+
+
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -137,6 +173,7 @@ class ProductController extends Controller
 
         $shop = DB::table('products')->select(
               'products.*',
+              'product.id as pro_id',
               'categories.*',
               'shops.*'
               )

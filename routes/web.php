@@ -43,6 +43,6 @@ Route::group(['middleware' => 'admin'], function () {
 
   Route::post('api/post_status', 'ProductController@post_status');
   Route::post('api/user_status', 'UsersController@users_status');
-
+  Route::post('upload_more_pic', 'ProductController@upload_more_pic');
 
   });
