@@ -343,7 +343,7 @@ img {
 
 @if($img_all)
 @foreach($img_all as $img_u)
-<div class="isotope-item  col-sm-6 col-md-4 col-lg-3">
+<div class="isotope-item  col-md-6">
   <div class="thumbnail">
     <div class="">
       <a class="thumb-image" >
@@ -353,7 +353,7 @@ img {
       <div class="mg-thumb-options">
         <div class="checkbox-custom checkbox-default">
           <input type="checkbox" name="product_image[]" value="{{$img_u->id}}"  >
-          <label>เลือกรูปภาพประกอบ</label>
+
         </div>
       </div>
     </div>
