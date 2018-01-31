@@ -114,7 +114,44 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
                     <div class="row">
 
 
-                      
+                      <div class="col-sm-4 col-md-3">
+
+                            <div class="thumbnail a_sd_move">
+                              <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
+                              <a href="#">
+                              <img src="{{url('assets/font-end/image/PIC_0014-350.jpg')}}">
+
+                              </a></div>
+                              <div class="caption" style="padding: 3px;">
+                                <div class="descript bold">
+                                    <a href="https://www.sirispace.com/asset-1357">Millennium Residence</a>
+                                </div>
+                                <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8;">
+                                  2+1 bedrooms 3 bathrooms on 2...                            </div>
+
+                                <div class="descript" style="height: 20px;">
+                                  <span style="color: #e03753; font-size: 12px;"><i class="fa fa-map-marker"></i> 750 บาท</span>
+                                  <div class="descript-t">
+                                  <div class="postMetaInline-authorLockup">
+
+                                                                    <div class="rating">
+                                        <i class="fa fa-star voted"></i>
+                                        <i class="fa fa-star voted"></i>
+                                        <i class="fa fa-star voted"></i>
+                                        <i class="fa fa-star voted"></i>
+                                        <i class="fa fa-star voted"></i>
+                                        <span style="color: #777; font-size: 12px;">5.0</span>
+                                    </div>
+
+                                  </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
 
 
 
@@ -231,47 +268,40 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 
                           <div class="col-sm-4 col-md-3">
 
-                        <div class="thumbnail a_sd_move">
-                          <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
-                          <a href="https://www.sirispace.com/asset-1357">
-                          <img src="https://www.sirispace.com/assets/cusimage/1516979121.jpg">
-                          <div class="g_l_box">
-                                <div class="t_white">
-                                <p>
-                              <b class="t18 t_white">฿80000</b>
-                                </p>
+                                <div class="thumbnail a_sd_move">
+                                  <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
+                                  <a href="#">
+                                  <img src="{{url('assets/font-end/image/PIC_0014-350.jpg')}}">
+
+                                  </a></div>
+                                  <div class="caption" style="padding: 3px;">
+                                    <div class="descript bold">
+                                        <a href="https://www.sirispace.com/asset-1357">Millennium Residence</a>
+                                    </div>
+                                    <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8;">
+                                      2+1 bedrooms 3 bathrooms on 2...                            </div>
+
+                                    <div class="descript" style="height: 20px;">
+                                      <span style="color: #e03753; font-size: 12px;"><i class="fa fa-map-marker"></i> 750 บาท</span>
+                                      <div class="descript-t">
+                                      <div class="postMetaInline-authorLockup">
+
+                                                                        <div class="rating">
+                                            <i class="fa fa-star voted"></i>
+                                            <i class="fa fa-star voted"></i>
+                                            <i class="fa fa-star voted"></i>
+                                            <i class="fa fa-star voted"></i>
+                                            <i class="fa fa-star voted"></i>
+                                            <span style="color: #777; font-size: 12px;">5.0</span>
+                                        </div>
+
+                                      </div>
+                                      </div>
+                                    </div>
+
                                   </div>
-                              </div>
-                          </a></div>
-                          <div class="caption" style="padding: 3px;">
-                            <div class="descript bold">
-                                <a href="https://www.sirispace.com/asset-1357">Millennium Residence</a>
-                            </div>
-                            <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8;">
-                              2+1 bedrooms 3 bathrooms on 2...                            </div>
-
-                            <div class="descript" style="height: 20px;">
-                              <span style="color: #e03753; font-size: 12px;"><i class="fa fa-map-marker"></i> Khlong Toei</span>
-                              <div class="descript-t">
-                              <div class="postMetaInline-authorLockup">
-
-                                                                <div class="rating">
-                                    <i class="fa fa-star voted"></i>
-                                    <i class="fa fa-star voted"></i>
-                                    <i class="fa fa-star voted"></i>
-                                    <i class="fa fa-star voted"></i>
-                                    <i class="fa fa-star voted"></i>
-                                    <span style="color: #777; font-size: 12px;">5.0</span>
                                 </div>
-
                               </div>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-
 
 
 
