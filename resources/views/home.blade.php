@@ -118,8 +118,8 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 
                             <div class="thumbnail a_sd_move">
                               <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
-                              <a href="https://www.sirispace.com/asset-1357">
-                              <img src="https://www.sirispace.com/assets/cusimage/1516979121.jpg">
+                              <a href="#">
+                              <img src="{{url(assets/font-end/image/PIC_0014-350.jpg)}}">
                               <div class="g_l_box">
                                     <div class="t_white">
                                     <p>
