@@ -204,6 +204,13 @@ class ProductController extends Controller
 
         $data['shop_id'] = $shop_id;
 
+        $img_all = DB::table('product_image')->select(
+            'product_image.*'
+            )
+            ->where('product_id', $id)
+            ->get();
+        $data['img_all'] = $img_all;
+
         $data['header'] = 'แก้ไข '.$shop->product_name;
         $data['url'] = url('product/'.$id);
         $data['method'] = "put";

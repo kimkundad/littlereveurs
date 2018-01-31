@@ -327,6 +327,57 @@ img {
 
 
 
+
+
+                  <div class="col-md-6">
+
+                    <div class="content">
+
+
+
+                      <form  action="{{url('admin/property_image_del/')}}" method="post" onsubmit="return(confirm('Do you want Delete'))">
+  <input type="hidden" name="_method" value="POST">
+   <input type="hidden" name="_token" value="{{ csrf_token() }}">
+   <input type="hidden" name="pro_id" value="{{$objs->pro_id}}">
+<div class="row mg-files" data-sort-destination data-sort-id="media-gallery">
+
+@if($img_all)
+@foreach($img_all as $img_u)
+<div class="isotope-item  col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+    <div class="">
+      <a class="thumb-image" >
+        <img src="{{url('assets/gallery_product/'.$img_u->image)}}" class="img-responsive" >
+      </a>
+      <br>
+      <div class="mg-thumb-options">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" name="product_image[]" value="{{$img_u->id}}"  >
+          <label>เลือกรูปภาพประกอบ</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mg-description">
+
+      <small class="pull-right text-muted"></small>
+    </div>
+  </div>
+</div>
+@endforeach
+@endif
+
+
+
+
+</div>
+<button type="submit" class="btn btn-danger pull-right" style="margin-top:-15px;">ลบรูปภาพที่เลือกไว้</button>
+</form>
+
+                      </div>
+                    </div>
+
+
                 </div>
 
 
