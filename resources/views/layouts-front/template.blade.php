@@ -28,7 +28,7 @@
 
 
 
-  <!--   @include('layouts-front.inc-header') -->
+     @include('layouts-front.inc-header')
 
 
 
