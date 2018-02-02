@@ -264,7 +264,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                             <div class="thumbnail a_sd_move">
                               <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
                               <a href="#">
-                              <img src="{{url('assets/product/'.{{$homes->product_image}})}}">
+                              <img src="{{url('assets/product/'.$homes->product_image)}}">
 
                               </a></div>
                               <div class="caption" style="padding: 3px;">
