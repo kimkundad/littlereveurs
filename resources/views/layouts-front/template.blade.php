@@ -17,8 +17,8 @@
 
 
 
-    <link rel="shortcut icon" type="image/png" href="{{url('assets/img/favicon.png')}}">
-    <link rel="apple-touch-icon" type="image/x-icon" href="{{url('assets/img/favicon.png')}}">
+    <link rel="shortcut icon" type="image/png" href="{{url('assets/img/favicon.png')}}?v1">
+    <link rel="apple-touch-icon" type="image/x-icon" href="{{url('assets/img/favicon.png')}}?v1">
 
     @include('layouts-front.inc-style')
     @yield('stylesheet')
