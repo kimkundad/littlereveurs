@@ -48,7 +48,7 @@ class HomeController extends Controller
           ->where('product_id', $id)
           ->get();
       $data['home_image'] = $img_all;
-      {{dd($shop)}}
+      dd($shop);
       return view('product',$data);
 
     }
