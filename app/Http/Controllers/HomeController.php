@@ -40,7 +40,7 @@ class HomeController extends Controller
             ->orderBy('products.id', 'desc')
             ->first();
 
-      $data['objs'] = $shop;
+      $data['home'] = $shop;
 
       $img_all = DB::table('product_images')->select(
           'product_images.*'
