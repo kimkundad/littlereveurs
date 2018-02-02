@@ -10,7 +10,7 @@
 
 @section('ogtags')
     @include('layouts.og_tags', ['title' => $home->product_name , 'description' => strip_tags(str_limit($home->product_detail, 150)),
-    'image' => url('assets/product/'.$home->image_pro) ])
+    'image' => url('assets/product/'.$home->product_image) ])
 @stop
 
 @section('stylesheet')
