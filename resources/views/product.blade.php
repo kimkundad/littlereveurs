@@ -3,7 +3,7 @@
 @section('title')
 {{$home->product_name}}
 @stop
-
+{{dd($home)}}
 @section('description')
 {!! strip_tags(str_limit($home->product_detail, 150)) !!}
 @stop
