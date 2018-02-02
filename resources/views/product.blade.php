@@ -72,32 +72,32 @@
 
 <div class="col-md-6 col-sm-6" style="padding-right: 3px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[0]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[0]->image)}}" alt="" style="height: 279px;"></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[0]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[0]->image)}}" alt="" style="height: 279px;"></a>
 </div>
 
 <div class="col-md-6 col-sm-6" style="padding-left: 3px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[1]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[1]->image)}}" alt="" style="height: 279px;"></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[1]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[1]->image)}}" alt="" style="height: 279px;"></a>
 </div>
 
 <div class="col-md-4 col-sm-4" style="padding-right: 0px; padding-top:5px">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[2]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[2]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[2]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[2]->image)}}" alt=""></a>
 </div>
 
 <div class="col-md-4 col-sm-4" style="padding-left: 6px; padding-right:6px; padding-top:5px; ">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[3]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[3]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[3]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[3]->image)}}" alt=""></a>
 </div>
 
 
 <div class="col-md-4 col-sm-4" style="padding-left: 0px; padding-top:5px">
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[4]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[4]->image)}}" alt="">
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[4]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[4]->image)}}" alt="">
   <div class="see-all-overlay"><span class="see-all-overlay-text">ดูทั้งหมด {{$home_image_count}} รูป</span></div></a>
 </div>
 
@@ -105,14 +105,14 @@
 
 <div class="col-md-6 col-sm-6" style="padding-right: 3px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[0]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[0]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[0]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[0]->image)}}" alt=""></a>
 </div>
 
 <div class="col-md-6 col-sm-6" style="padding-left: 3px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[1]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[1]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[1]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[1]->image)}}" alt=""></a>
 </div>
 
 @endif
@@ -123,7 +123,7 @@
 @if($i > 5)
 
 <div class="col-md-4 col-sm-4 hidden " style="padding-left: 0px; padding-top:5px">
-<a class="example-image-link" href="{{url('assets/product/'.$images->image)}}" >
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$images->image)}}" >
 </a>
 </div>
 @endif
@@ -144,32 +144,32 @@
 
 <div class="col-md-6 col-sm-6" style="margin-bottom: 8px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[0]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[0]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[0]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[0]->image)}}" alt=""></a>
 </div>
 
 <div class="col-md-6 col-sm-6" style="margin-bottom: 8px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[1]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[1]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[1]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[1]->image)}}" alt=""></a>
 </div>
 
 <div class="col-md-4 col-sm-4" style="margin-bottom: 8px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[2]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[2]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[2]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[2]->image)}}" alt=""></a>
 </div>
 
 <div class="col-md-4 col-sm-4" style="margin-bottom: 8px;">
 
-<a class="example-image-link" href="{{url('assets/cusimage/'.$home_image[3]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/cusimage/'.$home_image[3]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[3]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[3]->image)}}" alt=""></a>
 </div>
 
 
 <div class="col-md-4 col-sm-4" style="margin-bottom: 8px;">
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[4]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[4]->image)}}" alt="">
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[4]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[4]->image)}}" alt="">
   <div class="see-all-overlay" style="width: 90%;"><span class="see-all-overlay-text">ดูทั้งหมด {{$home_image_count}} รูป</span></div></a>
 </div>
 
@@ -177,14 +177,14 @@
 
 <div class="col-md-6 col-sm-6" style="margin-bottom: 8px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[0]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[0]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[0]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[0]->image)}}" alt=""></a>
 </div>
 
 <div class="col-md-6 col-sm-6" style="margin-bottom: 8px;">
 
-<a class="example-image-link" href="{{url('assets/product/'.$home_image[1]->image)}}" >
-  <img class="img-responsive example-image" src="{{url('assets/product/'.$home_image[1]->image)}}" alt=""></a>
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[1]->image)}}" >
+  <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[1]->image)}}" alt=""></a>
 </div>
 
 @endif
@@ -195,7 +195,7 @@
 @if($i > 5)
 
 <div class="col-md-4 col-sm-4 hidden " >
-<a class="example-image-link" href="{{url('assets/product/'.$images->image)}}" >
+<a class="example-image-link" href="{{url('assets/gallery_product/'.$images->image)}}" >
 </a>
 </div>
 @endif
