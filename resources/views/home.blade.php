@@ -177,6 +177,28 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 
 
 
+                                  <div class=" col-md-2">
+
+                                        <div class="thumbnail a_sd_move">
+                                          <div style="max-height: 184px; overflow: hidden; position: relative;">
+                                          <a href="#">
+                                          <img src="{{url('assets/img/totoro_3.png')}}">
+
+                                          </a></div>
+                                          <div class="caption text-center" style="padding: 3px;">
+                                            <div class="descript bold">
+                                                <a href="#">ตุ๊กตา โตโตโร่</a>
+                                            </div>
+
+
+
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+
 
 
 
@@ -226,7 +248,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
           <div class="row">
             <br>
         <div class="col-md-12 " >
-          <h3>Little Reveurs</h3>
+          <h3>สินค้าเพื่อคุณโดยเฉพาะ</h3>
           <p>ขายตุ๊กตา น่ารัก น่ากอด ขนนุ่ม ขนฟู เหมาะสำหรับเป็นของขวัญในทุกโอกาสพิเศษ</p>
 
 
@@ -415,8 +437,8 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
               <div class="row">
                 <br>
             <div class="col-md-12 " >
-              <h3>RECENT UPDATES </h3>
-              <p>We're update a fresh listing everyday!</p>
+              <h3>Little Reveurs </h3>
+              <p>โตโตโร่ คอลเลคชั่น!</p>
 
 
               <div class="body-project">
