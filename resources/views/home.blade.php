@@ -551,9 +551,7 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 
             </div>
 
-            <div class="col-xs-12">
-                    <div class="view-more-wrapper"><a href="#" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
-                  </div>
+
 
         </div>
 
@@ -565,53 +563,6 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
 
 
 
-
-    <div class="content-section-b" style="padding: 20px 0 50px;">
-            <div class="container" >
-
-<hr style="border-top: 1px solid rgb(195, 202, 196);">
-              <div class="row">
-                <div class="col-md-12">
-<h3 class="text-center" style="font-weight:700">CERTIFICATE AND PARTNERSHIPS </h3>
-<br>
-</div>
-
-
-            <div class="col-md-2 col-sm-3 col-xs-6 logo-style">
-              <img alt="dealcha.com" src="assets/font-end/image/dealcha.png"></a>
-            </div>
-
-            <div class="col-md-2 col-sm-3 col-xs-6 logo-style" >
-
-
-
-
-
-                <!--  <script src="https://www.trustmarkthai.com/callbackData/initialize.js?t=14f50-15-5-837d5ecc2533522de0fc24060ca019bf16612f49" id="dbd-init"></script><div id="Certificate-banners"></div> -->
-
-            </div>
-
-            <div class="col-md-2 col-sm-3 col-xs-6 logo-style" >
-                <img alt="กรมพัฒนาธุรกิจการค้า sirispace" src="assets/font-end/image/vbv.png"></a>
-            </div>
-
-            <div class="col-md-2 col-sm-3 col-xs-6 logo-style" >
-                <img alt="กรมพัฒนาธุรกิจการค้า sirispace" src="assets/font-end/image/jb.png"></a>
-            </div>
-
-            <div class="col-md-2 col-sm-3 col-xs-6 logo-style" >
-                <img alt="กรมพัฒนาธุรกิจการค้า sirispace" src="assets/font-end/image/whatsonsukhumvit.png"></a>
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6 logo-style">
-              <img alt="dealcha.com" src="assets/font-end/image/tccc-logo.png"></a>
-            </div>
-
-        </div>
-
-
-
-            </div>
-    </div>
 @stop
 
 @section('scripts')
