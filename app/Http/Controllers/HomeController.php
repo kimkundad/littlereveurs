@@ -42,14 +42,22 @@ class HomeController extends Controller
 
       $data['home'] = $shop;
 
-      $img_all = DB::table('product_images')->select(
-          'product_images.*'
-          )
-          ->where('product_id', $id)
-          ->get();
-      $data['home_image'] = $img_all;
-      dd($shop);
-      return view('product',$data);
+      if($shop != null){
+
+        $img_all = DB::table('product_images')->select(
+            'product_images.*'
+            )
+            ->where('product_id', $id)
+            ->get();
+        $data['home_image'] = $img_all;
+
+        return view('product',$data);
+
+      }else{
+        return view('product_null');
+      }
+
+
 
     }
 }
