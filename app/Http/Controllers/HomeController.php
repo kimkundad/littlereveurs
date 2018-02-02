@@ -22,7 +22,24 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('/home');
+
+      $shop = DB::table('products')->select(
+            'products.*',
+            'products.id as pro_id',
+            'categories.*',
+            'shops.*'
+            )
+            ->leftjoin('shops','shops.id', 'products.shop_id')
+            ->leftjoin('categories','categories.category_id', 'products.cat_id')
+            ->where('products.product_status', 1)
+            ->orderBy('products.view', 'desc')
+            ->limit(8)
+            ->get();
+      //dd($home);
+      $data['home'] = $shop;
+
+
+        return view('/home' ,$data);
     }
 
     public function show($id)

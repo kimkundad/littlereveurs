@@ -257,23 +257,25 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                     <div class="row">
 
 
+                      @if($home)
+                        @foreach($home as $homes)
                       <div class="col-sm-4 col-md-3">
 
                             <div class="thumbnail a_sd_move">
                               <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
                               <a href="#">
-                              <img src="{{url('assets/font-end/image/PIC_0014-350.jpg')}}">
+                              <img src="{{url('assets/product/'.{{$homes->product_image}})}}">
 
                               </a></div>
                               <div class="caption" style="padding: 3px;">
                                 <div class="descript bold">
-                                    <a href="#">Onesie Yika (สีชมพู)</a>
+                                    <a href="#">{{$homes->product_name}}</a>
                                 </div>
                                 <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8;">
-                                  Yika ชุดคอสเพลย์ชุดนอนผู้ใหญ่เพศยูนิคอร์น Onesie ชุดนอน S-XL (สีชมพู)...                            </div>
+                                  <?=mb_strimwidth($homes->product_detail, 0, 29, '...');?>                          </div>
 
                                 <div class="descript" style="height: 20px;">
-                                  <span style="color: #e03753; font-size: 12px;"><i class="fa fa-map-marker"></i> 750 บาท</span>
+                                  <span style="color: #e03753; font-size: 14px; font-weight: 700;"><i class="fa fa-map-marker"></i> {{$homes->price_2}} บาท</span>
                                   <div class="descript-t">
                                   <div class="postMetaInline-authorLockup">
 
@@ -293,44 +295,10 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                               </div>
                             </div>
                           </div>
+                           @endforeach
+                          @endif
 
 
-                          <div class="col-sm-4 col-md-3">
-
-                                <div class="thumbnail a_sd_move">
-                                  <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
-                                  <a href="#">
-                                  <img src="{{url('assets/font-end/image/PIC_0014-351.jpg')}}">
-
-                                  </a></div>
-                                  <div class="caption" style="padding: 3px;">
-                                    <div class="descript bold">
-                                        <a href="#">Onesie Yika (สีชมพู)</a>
-                                    </div>
-                                    <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8;">
-                                      Yika ชุดคอสเพลย์ชุดนอนผู้ใหญ่เพศยูนิคอร์น Onesie ชุดนอน S-XL (สีชมพู)...                            </div>
-
-                                    <div class="descript" style="height: 20px;">
-                                      <span style="color: #e03753; font-size: 12px;"><i class="fa fa-map-marker"></i> 750 บาท</span>
-                                      <div class="descript-t">
-                                      <div class="postMetaInline-authorLockup">
-
-                                                                        <div class="rating">
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <span style="color: #777; font-size: 12px;">5.0</span>
-                                        </div>
-
-                                      </div>
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>
-                              </div>
 
 
 
