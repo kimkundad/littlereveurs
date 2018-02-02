@@ -40,26 +40,40 @@ class HomeController extends Controller
             ->orderBy('products.id', 'desc')
             ->first();
 
+            $package = product::find($id);
+      $package->view += 1;
+      $package->save();
+
       $data['home'] = $shop;
 
       if($shop != null){
 
-        $img_all = DB::table('product_images')->select(
-            'product_images.*'
-            )
-            ->where('product_id', $id)
-            ->get();
+        $home_image = DB::table('product_images')
+      ->select(
+      'product_images.*'
+      )
+      ->where('product_images.product_id', $id)
+      ->limit(5)
+      ->get();
 
-        $home_image_count = DB::table('product_images')
-          ->select(
-          'product_images.*'
-          )
-          ->where('product_id', $id)
-          ->count();
+      $home_image_all = DB::table('product_images')
+      ->select(
+      'product_images.*'
+      )
+      ->where('product_images.product_id', $id)
+      ->get();
+
+      $home_image_count = DB::table('product_images')
+      ->select(
+      'product_images.*'
+      )
+      ->where('product_images.product_id', $id)
+      ->count();
 
         $data['home_image_count'] = $home_image_count;
 
-        $data['home_image'] = $img_all;
+        $data['home_image_all'] = $home_image_all;
+        $data['home_image'] = $home_image;
 
         return view('product',$data);
 
