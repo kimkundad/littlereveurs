@@ -37,6 +37,7 @@ class HomeController extends Controller
             ->leftjoin('shops','shops.id', 'products.shop_id')
             ->leftjoin('categories','categories.category_id', 'products.cat_id')
             ->where('products.id', $id)
+            ->where('products.product_status', 1)
             ->orderBy('products.id', 'desc')
             ->first();
 

@@ -142,7 +142,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                                   </a></div>
                                   <div class="caption text-center" style="padding: 3px;">
                                     <div class="descript bold">
-                                        <a href="#">ออมสิน โตโตโร่</a>
+                                        <a href="#">ออมสิน โทโทโร่</a>
                                     </div>
 
 
@@ -164,7 +164,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                                       </a></div>
                                       <div class="caption text-center" style="padding: 3px;">
                                         <div class="descript bold">
-                                            <a href="#">โคมไฟ โตโตโร่</a>
+                                            <a href="#">โคมไฟ โทโทโร่</a>
                                         </div>
 
 
@@ -186,7 +186,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                                           </a></div>
                                           <div class="caption text-center" style="padding: 3px;">
                                             <div class="descript bold">
-                                                <a href="#">ตุ๊กตา โตโตโร่</a>
+                                                <a href="#">ตุ๊กตา โทโทโร่</a>
                                             </div>
 
 
