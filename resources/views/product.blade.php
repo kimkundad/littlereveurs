@@ -24,7 +24,7 @@
             <div class="container">
                         <ul>
                         <li><a href="{{url('/')}}">Home </a></li>
-                        <li><a href="{{url('property-2-'.$home->id_cat)}}">{{$home->cat_name}}</a></li>
+                        <li><a href="{{url('category_lr-'.$home->category_id)}}">{{$home->cat_name}}</a></li>
                         <li>{{$home->product_name}}</li>
                         </ul>
             </div>
