@@ -2,17 +2,16 @@
 
 
 @section('title')
-The Original Real Estate CASHBACK Network | Siri Space
+Little Reveurs ขาย ชุดมาสคอต ตุ๊กตาโทโทโร่
 @stop
 
 @section('description')
-SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps connect property hunters with the most current database of commercial and residential properties for sale and rent, with property news and all the resources a buyer
+Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตัวการ์ตูน, ชุดแฟนซี, ตุ๊กตาโทโทโร่, ออมสินโทโทโร่, โคมไฟโทโทโร่, Totoro Doll ขายทั้งปลีก ทั้งส่ง ชุดมาสคอตราคาถูก
 @stop
 
 @section('ogtags')
-    @include('layouts-front.og_tags', ['title' => 'The Original Real Estate CASHBACK Network | Siri Space', 'description' => 'SIRISPACE.com is a real estate company located in Bangkok,
-    Thailand that helps connect property hunters with the most current database of commercial and residential properties for sale and rent, with property news and all the resources a buyer',
-    'image' => url('assets/font-end/image/sirispace_facebook.png')])
+    @include('layouts-front.og_tags', ['title' => 'The Original Real Estate CASHBACK Network | Siri Space', 'description' => 'Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตัวการ์ตูน, ชุดแฟนซี, ตุ๊กตาโทโทโร่, ออมสินโทโทโร่, โคมไฟโทโทโร่, Totoro Doll, mascot suit, ขายทั้งปลีก ทั้งส่ง ชุดมาสคอตราคาถูก',
+    'image' => url('assets/img/littlereveurs_facebook.png')])
 @stop
 
 
