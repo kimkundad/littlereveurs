@@ -112,17 +112,17 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
                     <div class="row">
 
 
-                      <div class=" col-md-3">
+                      <div class=" col-md-2">
 
                             <div class="thumbnail a_sd_move">
-                              <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
+                              <div style="max-height: 184px; overflow: hidden; position: relative;">
                               <a href="#">
                               <img src="{{url('assets/font-end/image/PIC_0014-350.jpg')}}">
 
                               </a></div>
-                              <div class="caption" style="padding: 3px;">
+                              <div class="caption text-center" style="padding: 3px;">
                                 <div class="descript bold">
-                                    <a href="#">Onesie Yika (สีชมพู)</a>
+                                    <a href="#">ชุดมาสคอต</a>
                                 </div>
 
 
@@ -133,17 +133,17 @@ SIRISPACE.com is a real estate company located in Bangkok, Thailand that helps c
                           </div>
 
 
-                          <div class=" col-md-3">
+                          <div class=" col-md-2">
 
                                 <div class="thumbnail a_sd_move">
-                                  <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
+                                  <div style="max-height: 184px; overflow: hidden; position: relative;">
                                   <a href="#">
-                                  <img src="{{url('assets/font-end/image/PIC_0014-350.jpg')}}">
+                                  <img src="{{url('assets/img/totoro.png')}}">
 
                                   </a></div>
-                                  <div class="caption" style="padding: 3px;">
+                                  <div class="caption text-center" style="padding: 3px;">
                                     <div class="descript bold">
-                                        <a href="#">Onesie Yika (สีชมพู)</a>
+                                        <a href="#">ออมสิน โตโตโร่</a>
                                     </div>
 
 
