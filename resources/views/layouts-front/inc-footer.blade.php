@@ -18,10 +18,10 @@ color: #ccc;
 เขตจตุจักร กรุงเทพฯ 10900</p>
 
                <ul>
-                <li><span>Tel:</span>  <span style="color:#fdf7ac">081-100-7753</span> </li>
-                <li><span>Email:</span>  <span style="color:#fdf7ac">info@littlereveurs.com</span></li>
+                <li><span>Tel:</span>  <span style="color:#fdf7ac">080-111-3193</span> </li>
+                <li><span>Email:</span>  <span style="color:#fdf7ac">littlereveurs@gmail.com</span></li>
                 <li><span>Website:</span>  <span style="color:#fdf7ac">www.littlereveurs.com</span> </li>
-                <li><span>Line Id:</span> <a href="#" target="_blank" style="color:#fdf7ac">Little Reveurs </a></li>
+                <li><span>Line Id:</span> <a href="http://line.me/ti/p/@littshop" target="_blank" style="color:#fdf7ac">Little Reveurs </a></li>
                </ul>
 
             </div>
