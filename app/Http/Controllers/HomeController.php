@@ -49,6 +49,16 @@ class HomeController extends Controller
             )
             ->where('product_id', $id)
             ->get();
+
+        $home_image_count = DB::table('product_image')
+          ->select(
+          'product_image.*'
+          )
+          ->where('product_image.product_id', $id)
+          ->count();
+
+        $data['home_image_count'] = $home_image_count;
+
         $data['home_image'] = $img_all;
 
         return view('product',$data);
