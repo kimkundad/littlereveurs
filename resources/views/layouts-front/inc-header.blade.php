@@ -11,7 +11,7 @@
 
 
             <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{url('assets/image/SiriSpace-Logo.png')}}" height="45" title="logo">
+                <img src="{{url('assets/img/logo_1.png')}}" height="45" title="logo">
             </a>
         </div>
 
@@ -25,14 +25,14 @@
 
 
 
-                <li><a href="{{url('Refer')}}"><i class="fa fa-paper-plane "></i> Refer</a></li>
-                <li><a href="{{url('News')}}"><i class="fa fa-bullseye"></i> News</a></li>
+            <!--    <li><a href="{{url('Refer')}}"><i class="fa fa-paper-plane "></i> Refer</a></li>
+                <li><a href="{{url('News')}}"><i class="fa fa-bullseye"></i> News</a></li> -->
 
                 @if (Auth::guest())
-                    <li><a href="https://sirispace.com/login"><i class="fa fa-user"></i> Login</a></li>
-                    <li><a href="https://www.sirispace.com/register"><i class="fa fa-lock"></i> Register</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                    <li><a href="#"><i class="fa fa-lock"></i> Register</a></li>
                 @else
-                <li><a href="{{url('my_wishlist')}}"><i class="fa fa-heart-o"></i> wishlist</a></li>
+
                 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             {{ Auth::user()->name }} <span class="caret"></span>
