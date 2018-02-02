@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('layouts-front.template')
 
 @section('title')
 {{$home->product_name}}
