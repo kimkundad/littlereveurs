@@ -348,10 +348,16 @@
                                         <a href="http://line.me/ti/p/@littshop" target="_blank">
                                         <img src="{{url('assets/img/qrcode_littlereveurs.png')}}" style="max-width: 70%;" class="img-responsive">
                                       </a></td>
-                                        <td style="border: none;"><p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-                                          <i class="fa fa-clock-o"></i> วันที่อัพเดทสินค้า :
-                                          <?php echo DateThai($home->created_at); ?>
-                                        </p></td>
+                                        <td style="border: none;">
+
+                                          <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
+                                          <b><i class="fa fa-phone"></i> เบอร์โทร : 080-111-3193</b>
+                                          </p>
+                                          <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
+                                          <b><i class="fa fa-commenting-o"></i> Line id : Little Reveurs</b>
+                                          </p>
+
+                                      </td>
                                       </tr>
 
                                     </tbody>
