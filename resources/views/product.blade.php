@@ -344,11 +344,11 @@
                                   <table class="table">
                                     <tbody>
                                       <tr>
-                                        <td style="border: none;"><p>เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</p>
+                                        <td style="border: none; width: 50%;"><p>เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</p>
                                         <a href="http://line.me/ti/p/@littshop" target="_blank">
                                         <img src="{{url('assets/img/qrcode_littlereveurs.png')}}" style="max-width: 70%;" class="img-responsive">
                                       </a></td>
-                                        <td style="border: none;">
+                                        <td style="border: none; width: 50%;">
 
                                           <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
                                           <b><i class="fa fa-phone"></i> เบอร์โทร : 080-111-3193</b>
