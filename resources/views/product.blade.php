@@ -240,25 +240,7 @@
 
 
 
-<div>
-<h3>รายละเอียด</h3>
-  <div class="start-detail">
 
-    {!! $home->product_detail !!}
-    <hr>
-    <p>
-
-
-
-
-
-
-
-  </div>
-
-
-
-</div>
 
 
 
@@ -332,15 +314,31 @@
 
           <div class="border_gray pay_info">
 
+
+            <div>
+            <h3>รายละเอียด</h3>
+              <div class="start-detail">
+
+                {!! $home->product_detail !!}
+                <hr>
+                <p>
+
+
+
+
+
+
+
+              </div>
+
+
+
+            </div>
+
           </div>
 
 
-          <div class="box_style_2">
-            <i class="icon_set_1_icon-57" aria-hidden="true"></i>
-            <h4 style="margin-bottom: 0px;">Need <span style="color: #00c402;">Help?</span></h4>
-            <a href="tel://0940547728" class="phone">0940547728</a>
-            <small>Monday to Friday 9.00am - 7.30pm</small>
-          </div>
+
         </div>
 
 
