@@ -297,7 +297,7 @@
             <hr>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              
+               ขนาดที่มี
               <a style="float:left; margin-right:8px;" class="btn btn-success btn-xs" role="button">S </a>
               <a style="float:left; margin-right:8px;" class="btn btn-success btn-xs" role="button">M </a>
               <a style="float:left; margin-right:8px;" class="btn btn-success btn-xs" role="button">L </a>
