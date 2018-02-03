@@ -269,7 +269,7 @@
             <p> </p>
 
 
-            <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
+            <p style="color:#888; font-size:14px; margin-top:10px; margin-bottom:0px;">
               <i class="fa fa-info-circle"></i>
               {!! $home->product_detail !!}
             </p>
@@ -290,7 +290,7 @@
             ?>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-clock-o"></i> วันที่อัพเดทสินค้า : 
+              <i class="fa fa-clock-o"></i> วันที่อัพเดทสินค้า :
               <?php echo DateThai($home->created_at); ?>
             </p>
 
