@@ -290,7 +290,7 @@
             ?>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-clock"></i> วันที่อัพเดทสินค้า : 
+              <i class="fa fa-clock-o"></i> วันที่อัพเดทสินค้า : 
               <?php echo DateThai($home->created_at); ?>
             </p>
 
