@@ -335,7 +335,7 @@
 
 
           <div class="border_gray pay_info">
-            <h5 class="text-primary">ดูรายละเอียดเพิ่มเติมเกี่ยวกับการรับประกันของผู้ขาย</h5>
+            <h5 class="text-primary" style="font-weight: 700;">ดูรายละเอียดเพิ่มเติมเกี่ยวกับการรับประกันของผู้ขาย</h5>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
               <i class="fa fa-check text-success"></i>
