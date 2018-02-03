@@ -346,7 +346,7 @@
                                       <tr>
                                         <td><p>เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</p>
                                         <a href="http://line.me/ti/p/@littshop" target="_blank">
-                                        <img src="{{url('assets/img/qrcode_littlereveurs.png')}}" class="img-responsive">
+                                        <img src="{{url('assets/img/qrcode_littlereveurs.png')}}" style="max-width: 70%;" class="img-responsive">
                                       </a></td>
                                         <td><p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
                                           <i class="fa fa-clock-o"></i> วันที่อัพเดทสินค้า :
@@ -356,7 +356,7 @@
 
                                     </tbody>
                                   </table>
-                                  
+
 
 
 
