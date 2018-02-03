@@ -263,14 +263,16 @@
 
 
 
-            <p style="color:#666">ID <strong>{{$home->pro_id}} </strong></p>
+            <p style="color:#666">ID <strong>{{$home->product_code}} </strong></p>
             <h4 style=" color: #ff5722; font-weight: bold;"><i class="icon_set_1_icon-36" style="font-size:28px;"></i> THB {{ number_format($home->price_2) }}</h4>
             <hr>
             <p> </p>
 
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-info-circle"></i>  </p>
+              <i class="fa fa-info-circle"></i>
+              {!! $home->product_detail !!}
+            </p>
 
 
 
@@ -316,20 +318,7 @@
 
 
             <div>
-            <h3>รายละเอียด</h3>
-              <div class="start-detail">
 
-                {!! $home->product_detail !!}
-                <hr>
-                <p>
-
-
-
-
-
-
-
-              </div>
 
 
 
