@@ -341,18 +341,25 @@
 
                                   <hr>
                                   <h5 class="text-primary" style="font-weight: 700;"> ช่องทางการติดต่อ สั่งซื้อ</h5>
-                                 <div style="width:50%; float:left;">
-                                   <p>เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</p>
-                                   <a href="http://line.me/ti/p/@littshop" target="_blank">
-                                   <img src="{{url('assets/img/qrcode_littlereveurs.png')}}" class="img-responsive">
-                                 </a>
-                                 </div>
-                                 <div style="width:50%">
-                                   <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-                                     <i class="fa fa-clock-o"></i> วันที่อัพเดทสินค้า :
-                                     <?php echo DateThai($home->created_at); ?>
-                                   </p>
-                                 </div>
+                                  <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td><p>เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</p>
+                                        <a href="http://line.me/ti/p/@littshop" target="_blank">
+                                        <img src="{{url('assets/img/qrcode_littlereveurs.png')}}" class="img-responsive">
+                                      </a></td>
+                                        <td><p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
+                                          <i class="fa fa-clock-o"></i> วันที่อัพเดทสินค้า :
+                                          <?php echo DateThai($home->created_at); ?>
+                                        </p></td>
+                                      </tr>
+
+                                    </tbody>
+                                  </table>
+
+
+
+                              
 
 
           </div>
