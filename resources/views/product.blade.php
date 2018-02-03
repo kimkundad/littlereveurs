@@ -335,25 +335,25 @@
 
 
           <div class="border_gray pay_info">
-            <h5>ดูรายละเอียดเพิ่มเติมเกี่ยวกับการรับประกันของผู้ขาย</h5>
+            <h5 class="text-primary">ดูรายละเอียดเพิ่มเติมเกี่ยวกับการรับประกันของผู้ขาย</h5>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-check"></i>
+              <i class="fa fa-check text-success"></i>
               การจัดส่งตรงเวลา, ส่งแบบธรรมดาและ EMS (EMS + 30 บาท)
             </p>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-check"></i>
+              <i class="fa fa-check text-success"></i>
               <b>คืนเงินเต็มจำนวน</b> หากไม่ได้รับสินค้า
             </p>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-check"></i>
+              <i class="fa fa-check text-success"></i>
               <b>จะมีการคืนเงินแบบเต็มจำนวนหรือบางส่วน</b> หากไอเท็มไม่เป็นไปตามที่ระบุไว้ (7วันคืนสินค้า)
             </p>
 
             <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-close"></i>
+              <i class="fa fa-close text-danger"></i>
               ไม่สามารถชำระเงินปลายทางได้
             </p>
 
