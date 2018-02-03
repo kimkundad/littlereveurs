@@ -350,16 +350,16 @@
                                       </a></td>
                                         <td style="border: none; width: 50%;">
 
-                                          <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
+                                          <p style="color:#888; font-size:13px; margin-top:10px; margin-bottom:0px;">
                                           <b><i class="fa fa-phone"></i> เบอร์โทร : 080-111-3193</b>
                                           </p>
-                                          <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
+                                          <p style="color:#888; font-size:13px; margin-top:10px; margin-bottom:0px;">
                                           <b><i class="fa fa-commenting-o"></i> Line id : Little Reveurs</b>
                                           </p>
 
                                           <p style="color:#888; font-size:12px; margin-top:10px; margin-bottom:0px;">
-                                          <b>กรณีที่ลูกค้าต้องการซื้อ ในราคาส่ง ลูกค้าสามารถติดต่อผ่านช่องทางดังกล่าวได้เหมือนกัน เพื่อที่จะคูปองส่วนลด ที่ทางร้าน
-                                          ได้ส่งให้</b>
+                                          กรณีที่ลูกค้าต้องการซื้อ ในราคาส่ง ลูกค้าสามารถติดต่อผ่านช่องทางดังกล่าวได้เหมือนกัน เพื่อที่จะคูปองส่วนลด ที่ทางร้าน
+                                          ได้ส่งให้
                                           </p>
 
                                       </td>
