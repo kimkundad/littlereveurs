@@ -338,6 +338,19 @@
                                     </div>
                                   </div>
 
+
+                                  <hr>
+                                  <h5 class="text-primary" style="font-weight: 700;"> ช่องทางการติดต่อ สั่งซื้อ</h5>
+                                 <div class="col-md-6">
+                                   <p>เพิ่มเพื่อนใน LINE ด้วยคิวอาร์โค้ด</p>
+                                   <img src="{{url('assets/img/qrcode_littlereveurs.png')}}" class="img-responsive">
+
+                                 </div>
+                                 <div class="col-md-6">
+
+                                 </div>
+
+
           </div>
 
 
