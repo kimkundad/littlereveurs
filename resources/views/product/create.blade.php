@@ -269,7 +269,7 @@ $(document).ready(function() {
 
     fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New'],
     disableDragAndDrop: true,
-    height: 450,                 // set editor height
+    height: 300,                 // set editor height
     minHeight: null,             // set minimum height of editor
     maxHeight: null,             // set maximum height of editor
     focus: true                  // set focus to editable area after initializing summernote
