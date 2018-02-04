@@ -1,6 +1,7 @@
 @extends('layouts.template')
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 @section('stylesheet')
-
+<link href="{{URL::asset('assets/text/dist/summernote.css')}}" rel="stylesheet">
 <style>
         .box-upload-file {
             background-image: url('{{url('front/asset/img/bg-blue-2.png')}}');
@@ -207,7 +208,7 @@ img {
                                 <div class="form-group{{ $errors->has('product_detail') ? ' has-error' : '' }}">
                                     <label>รายละเอียดสินค้า*</label>
 
-                                    <textarea rows="3" class="form-control border-input" name="product_detail" placeholder="Here can be your description" value="Mike">{{ old( 'product_detail') }}</textarea>
+                                    <textarea rows="3" class="form-control border-input" name="product_detail" id="summernote" placeholder="Here can be your description" value="Mike">{{ old( 'product_detail') }}</textarea>
                                     @if ($errors->has('product_detail'))
                                         <span class="help-block">
                                             <strong>กรุณาใส่ รายละเอียด ของคุณด้วย</strong>
@@ -256,6 +257,29 @@ img {
 @stop
 
 @section('scripts')
+<script src="{{URL::asset('assets/text/dist/summernote.js')}}"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+  $('#summernote').summernote({
+
+    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New'],
+    disableDragAndDrop: true,
+    height: 450,                 // set editor height
+    minHeight: null,             // set minimum height of editor
+    maxHeight: null,             // set maximum height of editor
+    focus: true                  // set focus to editable area after initializing summernote
+
+  });
+});
+var postForm = function() {
+var content = $('textarea[name="detail"]').html($('#summernote').code());
+}
+</script>
 <script>
         $(document).ready(function () {
             $("#fileAvatar").on("change", previewFile);
