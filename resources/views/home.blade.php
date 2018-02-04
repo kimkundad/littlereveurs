@@ -158,13 +158,13 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
                                     <div class="thumbnail a_sd_move">
                                       <div style="max-height: 184px; overflow: hidden; position: relative;">
-                                      <a href="#">
+                                      <a href="{{url('lamp_totoro')}}">
                                       <img src="{{url('assets/img/totoro_2.png')}}">
 
                                       </a></div>
                                       <div class="caption text-center" style="padding: 3px;">
                                         <div class="descript bold">
-                                            <a href="#">โคมไฟ โทโทโร่</a>
+                                            <a href="{{url('lamp_totoro')}}">โคมไฟ โทโทโร่</a>
                                         </div>
 
 
