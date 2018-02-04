@@ -57,6 +57,28 @@ class HomeController extends Controller
         return view('/home' ,$data);
     }
 
+
+
+    public function mascot()
+    {
+      $shop = DB::table('products')->select(
+            'products.*',
+            'products.id as pro_id',
+            'categories.*',
+            'shops.*'
+            )
+            ->leftjoin('shops','shops.id', 'products.shop_id')
+            ->leftjoin('categories','categories.category_id', 'products.cat_id')
+            ->where('products.product_status', 1)
+            ->where('categories.category_id', 3)
+            ->orderBy('products.view', 'desc')
+            ->limit(8)
+            ->get();
+      //dd($home);
+      $data['home'] = $shop;
+      return view('/mascot' ,$data);
+    }
+
     public function show($id)
     {
 

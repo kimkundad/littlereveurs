@@ -22,6 +22,8 @@ Route::get('/callback', 'FacebookAuthController@callback');
 
 Route::get('/product-{id}', 'HomeController@show');
 
+Route::get('/mascot', 'HomeController@mascot');
+
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::group(['middleware' => 'admin'], function () {
