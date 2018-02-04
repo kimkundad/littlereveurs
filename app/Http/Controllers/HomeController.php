@@ -118,6 +118,28 @@ class HomeController extends Controller
     }
 
 
+    public function totoro_dolls()
+    {
+      $shop = DB::table('products')->select(
+            'products.*',
+            'products.id as pro_id',
+            'categories.*',
+            'shops.*'
+            )
+            ->leftjoin('shops','shops.id', 'products.shop_id')
+            ->leftjoin('categories','categories.category_id', 'products.cat_id')
+            ->where('products.product_status', 1)
+            ->where('categories.category_id', 6)
+            ->orderBy('products.view', 'desc')
+            ->get();
+      //dd($home);
+      $data['home'] = $shop;
+      return view('/totoro_dolls' ,$data);
+    }
+
+
+
+
 
     public function show($id)
     {

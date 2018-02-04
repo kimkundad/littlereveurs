@@ -25,7 +25,7 @@ Route::get('/product-{id}', 'HomeController@show');
 Route::get('/mascot', 'HomeController@mascot');
 Route::get('/piggy_totoro', 'HomeController@piggy_totoro');
 Route::get('/lamp_totoro', 'HomeController@lamp_totoro');
-
+Route::get('/totoro_dolls', 'HomeController@totoro_dolls');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

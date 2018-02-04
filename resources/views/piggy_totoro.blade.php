@@ -180,13 +180,13 @@
 
                                         <div class="thumbnail a_sd_move">
                                           <div style="max-height: 184px; overflow: hidden; position: relative;">
-                                          <a href="#">
+                                          <a href="{{url('totoro_dolls')}}">
                                           <img src="{{url('assets/img/totoro_3.png')}}">
 
                                           </a></div>
                                           <div class="caption text-center" style="padding: 3px;">
                                             <div class="descript bold">
-                                                <a href="#">ตุ๊กตา โทโทโร่</a>
+                                                <a href="{{url('totoro_dolls')}}">ตุ๊กตา โทโทโร่</a>
                                             </div>
 
 
