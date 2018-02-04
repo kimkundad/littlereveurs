@@ -11,7 +11,7 @@
 
 @section('ogtags')
     @include('layouts-front.og_tags', ['title' => 'หมอนผ้าห่มโทโทโร่-Totoro ตัวอ้วนน่ารัก สอดมือได้ | Little Reveurs', 'description' => 'ขายหมอนผ้าห่มโทโทโร่ ราคาถูก พร้อมส่ง หมอนผ้าห่ม totoro ผ้าห่มนาโนหนานุ่ม สีเทา ขนาด 100cx140 cm แบบผ้าห่มแยก, แบบสอดมือได้, หมอนผ้าห่มน่ารัก',
-    'image' => url('assets/img/littlereveurs_facebook.png')])
+    'image' => url('assets/img/totoro_dolls_facebook.jpg')])
 @stop
 
 

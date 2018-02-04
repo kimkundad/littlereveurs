@@ -11,7 +11,7 @@
 
 @section('ogtags')
     @include('layouts-front.og_tags', ['title' => 'โคมไฟโทโทโร่ ราคาถูก โคมไฟTOTORO น่ารัก Little Reveurs', 'description' => 'ขายโคมไฟโตโตโร่ ราคาถูก, โคมไฟโตโตโร่ พร้อมส่ง, โคมไฟ Totoro โทโทโร่หน้ายิ้ม ขยับได้, สำหรับวางบนหัวนอนแสงไฟอ่อนสวย โต๊ะคอม, โคมไฟ Totoro ราคาถูก',
-    'image' => url('assets/img/littlereveurs_facebook.png')])
+    'image' => url('assets/img/lamp_totoro_facebook.jpg')])
 @stop
 
 
