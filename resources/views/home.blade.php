@@ -403,7 +403,13 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
               <div class="row">
                 <br>
-            <div class="col-md-12 " >
+
+
+
+
+
+
+      <!--      <div class="col-md-12 " >
               <h3>Little Reveurs </h3>
               <p>โตโตโร่ คอลเลคชั่น!</p>
 
@@ -506,17 +512,11 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
               </div>
-            <!--    <div class="panel panel-default">
-                    <div class="panel-heading">Welcome</div>
-
-                    <div class="panel-body">
-                        Your Application's Landing Page.
-                    </div>
-                </div> -->
 
 
 
-            </div>
+
+            </div> -->
 
 
 
