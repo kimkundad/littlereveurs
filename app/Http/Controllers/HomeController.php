@@ -72,7 +72,6 @@ class HomeController extends Controller
             ->where('products.product_status', 1)
             ->where('categories.category_id', 3)
             ->orderBy('products.view', 'desc')
-            ->limit(8)
             ->get();
       //dd($home);
       $data['home'] = $shop;
