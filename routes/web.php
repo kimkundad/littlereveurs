@@ -23,6 +23,8 @@ Route::get('/callback', 'FacebookAuthController@callback');
 Route::get('/product-{id}', 'HomeController@show');
 
 Route::get('/mascot', 'HomeController@mascot');
+Route::get('/piggy_totoro', 'HomeController@piggy_totoro');
+
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

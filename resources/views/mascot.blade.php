@@ -136,13 +136,13 @@
 
                                 <div class="thumbnail a_sd_move">
                                   <div style="max-height: 184px; overflow: hidden; position: relative;">
-                                  <a href="#">
+                                  <a href="{{url('piggy_totoro')}}">
                                   <img src="{{url('assets/img/totoro.png')}}">
 
                                   </a></div>
                                   <div class="caption text-center" style="padding: 3px;">
                                     <div class="descript bold">
-                                        <a href="#">ออมสิน โทโทโร่</a>
+                                        <a href="{{url('piggy_totoro')}}">ออมสิน โทโทโร่</a>
                                     </div>
 
 

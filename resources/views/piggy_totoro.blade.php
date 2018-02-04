@@ -2,15 +2,15 @@
 
 
 @section('title')
-Little Reveurs ขาย ชุดมาสคอต ตุ๊กตาโทโทโร่
+  ชุดมาสคอต ชุด mascot ชุดแฟนซี ชุดนอนมาสคอต ราคาถูก | Little Reveurs
 @stop
 
 @section('description')
-Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตัวการ์ตูน, ชุดแฟนซี, ตุ๊กตาโทโทโร่, ออมสินโทโทโร่, โคมไฟโทโทโร่, Totoro Doll ขายทั้งปลีก ทั้งส่ง ชุดมาสคอตราคาถูก
+ ขายชุดมาสคอต ชุด มาสคอทราคาถูก Mascot ชุดแฟนซี ชุดนอนมาสคอต ราคาถูก, ชุดมาสคอตราคาส่ง ชุดนอนสัตว์ พร้อมส่ง, ชุดสัตว์แฟนซี, ชุดนอนมาสคอต ราคาถูก
 @stop
 
 @section('ogtags')
-    @include('layouts-front.og_tags', ['title' => 'Little Reveurs ขาย ชุดมาสคอต ตุ๊กตาโทโทโร่', 'description' => 'Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตัวการ์ตูน, ชุดแฟนซี, ตุ๊กตาโทโทโร่, ออมสินโทโทโร่, โคมไฟโทโทโร่, Totoro Doll, mascot suit, ขายทั้งปลีก ทั้งส่ง ชุดมาสคอตราคาถูก',
+    @include('layouts-front.og_tags', ['title' => 'ชุดมาสคอต ชุด mascot ชุดแฟนซี ชุดนอนมาสคอต Little Reveurs', 'description' => 'ขายชุดมาสคอต ชุด มาสคอทราคาถูก Mascot ชุดแฟนซี ชุดนอนมาสคอต ราคาถูก, ชุดมาสคอตราคาส่ง ชุดนอนสัตว์ พร้อมส่ง, ชุดสัตว์แฟนซี, ชุดนอนมาสคอต ราคาถูก',
     'image' => url('assets/img/littlereveurs_facebook.png')])
 @stop
 
@@ -247,8 +247,8 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
           <div class="row">
             <br>
         <div class="col-md-12 " >
-          <h3>สินค้าเพื่อคุณโดยเฉพาะ</h3>
-          <p>ขายตุ๊กตา น่ารัก น่ากอด ขนนุ่ม ขนฟู เหมาะสำหรับเป็นของขวัญในทุกโอกาสพิเศษ</p>
+          <h3>กระปุกออมสิน Totoro, โทโทโร่</h3>
+          <p>กระปุกออมสินโทโทโร่(ถือร่ม) กระปุกออมสินลายโตโตโร่ Totoro มีให้เลือกหลายแบบ ขนาด 4 size</p>
 
 
 
@@ -365,9 +365,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 }
 </style>
 
-        <div class="col-xs-12">
-                <div class="view-more-wrapper"><a href="#" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
-              </div>
+
 
 
 
@@ -380,87 +378,6 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
 
-<section class="promo_full">
-			<div class="promo_full_wp magnific">
-				<div>
-					<h3>#Little Reveurs</h3>
-					<h4 style="font-size: 28px;">
-						Welcome to your new home...
-					</h4>
-
-				</div>
-			</div>
-		</section>
-
-
-
-
-
-
-    <div class="content-section-b" style="padding: 20px 0 20px;">
-            <div class="container" >
-
-
-              <div class="row">
-                <br>
-
-
-
-
-
-
-           <div class="col-md-12 " >
-              <h3>Little Reveurs </h3>
-              <p>โตโตโร่ คอลเลคชั่น!</p>
-
-
-              <div class="body-project">
-
-                        <div class="row">
-
-
-
-
-                          @if($shop_ran)
-                            @foreach($shop_ran as $homes)
-                          <div class="col-sm-4 col-md-3">
-
-                                <div class="thumbnail a_sd_move">
-                                  <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
-                                  <a href="{{url('product-'.$homes->pro_id)}}">
-                                  <img src="{{url('assets/product/'.$homes->product_image)}}">
-
-                                  </a></div>
-                                  <div class="caption" style="padding: 3px;">
-                                    <div class="descript bold">
-                                        <a href="{{url('product-'.$homes->pro_id)}}">{{$homes->product_name}}</a>
-                                    </div>
-                                    <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8; ">
-                                                               </div>
-
-                                    <div class="descript" style="height: 20px;">
-                                      <span style="color: #e03753; font-size: 14px; font-weight: 700;"><i class="fa fa-map-marker"></i> {{$homes->price_2}} บาท</span>
-                                      <div class="descript-t">
-                                      <div class="postMetaInline-authorLockup">
-
-                                                                        <div class="rating">
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <i class="fa fa-star voted"></i>
-                                            <span style="color: #777; font-size: 12px;">5.0</span>
-                                        </div>
-
-                                      </div>
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>
-                              </div>
-                               @endforeach
-                              @endif
 
 
 
@@ -469,32 +386,6 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
 
-
-
-
-
-
-
-
-                        </div>
-
-
-
-              </div>
-
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-            </div>
-    </div>
 
 
 
