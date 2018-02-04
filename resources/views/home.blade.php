@@ -271,7 +271,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                                 <div class="descript bold">
                                     <a href="{{url('product-'.$homes->pro_id)}}">{{$homes->product_name}}</a>
                                 </div>
-                                <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8;">
+                                <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8; height: 30px; max-height: 30px;">
                                   <?=mb_strimwidth($homes->product_detail, 0, 40, '...');?>                          </div>
 
                                 <div class="descript" style="height: 20px;">
