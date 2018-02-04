@@ -263,16 +263,16 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
                             <div class="thumbnail a_sd_move">
                               <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
-                              <a href="#">
+                              <a href="{{url('product-'.$homes->pro_id)}}">
                               <img src="{{url('assets/product/'.$homes->product_image)}}">
 
                               </a></div>
                               <div class="caption" style="padding: 3px;">
                                 <div class="descript bold">
-                                    <a href="#">{{$homes->product_name}}</a>
+                                    <a href="{{url('product-'.$homes->pro_id)}}">{{$homes->product_name}}</a>
                                 </div>
                                 <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8;">
-                                  <?=mb_strimwidth($homes->product_detail, 0, 35, '...');?>                          </div>
+                                  <?=mb_strimwidth($homes->product_detail, 0, 40, '...');?>                          </div>
 
                                 <div class="descript" style="height: 20px;">
                                   <span style="color: #e03753; font-size: 14px; font-weight: 700;"><i class="fa fa-map-marker"></i> {{$homes->price_2}} บาท</span>
