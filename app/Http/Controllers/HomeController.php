@@ -38,6 +38,21 @@ class HomeController extends Controller
       //dd($home);
       $data['home'] = $shop;
 
+      $shop_ran = DB::table('products')->select(
+            'products.*',
+            'products.id as pro_id',
+            'categories.*',
+            'shops.*'
+            )
+            ->leftjoin('shops','shops.id', 'products.shop_id')
+            ->leftjoin('categories','categories.category_id', 'products.cat_id')
+            ->where('products.product_status', 1)
+            ->inRandomOrder()
+            ->limit(4)
+            ->get();
+      //dd($home);
+      $data['shop_ran'] = $shop_ran;
+
 
         return view('/home' ,$data);
     }
