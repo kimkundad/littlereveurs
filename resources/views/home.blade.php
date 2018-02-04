@@ -115,13 +115,13 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
                             <div class="thumbnail a_sd_move">
                               <div style="max-height: 184px; overflow: hidden; position: relative;">
-                              <a href="#">
+                              <a href="{{url('mascot')}}">
                               <img src="{{url('assets/font-end/image/PIC_0014-350.jpg')}}">
 
                               </a></div>
                               <div class="caption text-center" style="padding: 3px;">
                                 <div class="descript bold">
-                                    <a href="#">ชุดมาสคอต</a>
+                                    <a href="{{url('mascot')}}">ชุดมาสคอต</a>
                                 </div>
 
 
