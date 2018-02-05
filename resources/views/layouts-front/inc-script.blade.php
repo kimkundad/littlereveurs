@@ -4,3 +4,13 @@
 <script src="{{url('assets/font-end/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
 <script type="text/javascript" src="{{url('assets/font-end/js/slide-show.js')}}"></script>
 <script type="text/javascript" src="{{url('assets/font-end/js/bootstrap-select.js')}}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113458614-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113458614-1');
+</script>
