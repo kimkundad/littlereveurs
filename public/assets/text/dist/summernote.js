@@ -4141,7 +4141,6 @@
         var firstSpan = list.head(spans);
 
         $(spans).css({
-          value = 12;
           'font-size': value + 'px'
         });
 
