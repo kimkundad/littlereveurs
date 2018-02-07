@@ -284,7 +284,7 @@
 
 
             <p style="color:#888; font-size:13px; margin-top:10px; margin-bottom:0px;">
-              <i class="fa fa-info-circle"></i>
+              
               {!! $home->product_detail !!}
             </p>
 
