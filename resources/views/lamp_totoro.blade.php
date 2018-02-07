@@ -186,7 +186,7 @@
                                           </a></div>
                                           <div class="caption text-center" style="padding: 3px;">
                                             <div class="descript bold">
-                                                <a href="{{url('totoro_dolls')}}">ตุ๊กตา โทโทโร่</a>
+                                                <a href="{{url('totoro_dolls')}}">ตุ๊กตา ตัวใหญ่</a>
                                             </div>
 
 
