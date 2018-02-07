@@ -40,7 +40,13 @@
           <div class="row">
 
 
-        <div class="col-md-6 " >
+
+        @if($home->category_id == 6)
+        <div class="col-md-8" >
+        @else
+        <div class="col-md-6" >
+        @endif
+
           <h3 style="margin-top: 0px;">{{$home->product_name}}</h3>
 
 
@@ -258,7 +264,15 @@
 
         </div>
 
-        <div class="col-md-6 " >
+
+
+          @if($home->category_id == 6)
+          <div class="col-md-4" >
+          @else
+          <div class="col-md-6" >
+          @endif
+
+
           <div class="border_gray pay_info">
 
 
