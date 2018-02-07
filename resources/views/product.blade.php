@@ -109,13 +109,13 @@
 
 @else
 
-<div class="col-md-6 col-sm-6" style="padding-right: 3px;">
+<div class="col-md-6 col-sm-12" style="padding-right: 3px;">
 
 <a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[0]->image)}}" >
   <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[0]->image)}}" alt=""></a>
 </div>
 
-<div class="col-md-6 col-sm-6" style="padding-left: 3px;">
+<div class="col-md-6 col-sm-12" style="padding-left: 3px;">
 
 <a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[1]->image)}}" >
   <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[1]->image)}}" alt=""></a>
@@ -182,7 +182,6 @@
 @else
 
 <div class="col-md-12 col-sm-12" style="margin-bottom: 8px;">
-
 <a class="example-image-link" href="{{url('assets/gallery_product/'.$home_image[0]->image)}}" >
   <img class="img-responsive example-image" src="{{url('assets/gallery_product/'.$home_image[0]->image)}}" alt=""></a>
 </div>
