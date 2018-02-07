@@ -365,7 +365,7 @@
                                         <td style="border: none; width: 50%;">
 
                                           <p style="color:#888; font-size:13px; margin-top:10px; margin-bottom:0px;">
-                                          <b><i class="fa fa-phone"></i> เบอร์โทร : 080-111-3193</b>
+                                          <b><i class="fa fa-phone"></i> เบอร์โทร : <br>080-111-3193</b>
                                           </p>
                                           <p style="color:#888; font-size:13px; margin-top:10px; margin-bottom:0px;">
                                           <b><i class="fa fa-commenting-o"></i> Line id : @littshop</b>
