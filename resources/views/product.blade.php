@@ -26,9 +26,9 @@
                         <li><a href="{{url('/')}}">Home </a></li>
                         @if($home->category_id == 3)
                         <li><a href="{{url('mascot')}}">{{$home->cat_name}}</a></li>
-                        @else if($home->category_id == 4)
+                        @elseif($home->category_id == 4)
                         <li><a href="{{url('piggy_totoro')}}">{{$home->cat_name}}</a></li>
-                        @else if($home->category_id == 5)
+                        @elseif($home->category_id == 5)
                         <li><a href="{{url('lamp_totoro')}}">{{$home->cat_name}}</a></li>
                         @else
                         <li><a href="{{url('totoro_dolls')}}">{{$home->cat_name}}</a></li>
