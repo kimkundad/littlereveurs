@@ -249,7 +249,7 @@ img {
                                           </div>
 
                                           <div class="">
-                                              <button type="submit" class="btn btn-info btn-fill btn-wd">กดสร้างสินค้า</button>
+                                              <button type="submit" class="btn btn-info btn-fill btn-wd">อัพเดทสินค้า</button>
                                           </div>
                             </form>
                             <br>
@@ -324,6 +324,12 @@ img {
 
 
                             </div>
+
+
+
+
+
+
                       </div>
                   </div>
 
@@ -337,7 +343,7 @@ img {
 
 
 
-                      <form  action="{{url('property_image_del')}}" method="post" onsubmit="return(confirm('Do you want Delete'))">
+<form  action="{{url('property_image_del')}}" method="post" onsubmit="return(confirm('Do you want Delete'))">
   <input type="hidden" name="_method" value="POST">
    <input type="hidden" name="_token" value="{{ csrf_token() }}">
    <input type="hidden" name="pro_id" value="{{$objs->pro_id}}">
