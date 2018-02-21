@@ -16,7 +16,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
 @section('stylesheet')
-<link href="{{url('assets/css/slide.css')}}" rel="stylesheet" type="text/css" />
+
 
 @stop('stylesheet')
 
@@ -29,6 +29,18 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
 <style>
+
+#first-slider .slide1{
+    background-image: url({{url('assets/img/1499233524-image.jpg')}});
+}
+#first-slider .slide2{
+    background-image: url({{url('assets/img/1499233524-image.jpg')}});
+}
+#first-slider .slide3{
+    background-image: url({{url('assets/img/1499233524-image.jpg')}});
+}
+
+
 .list_menu_y {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -82,54 +94,57 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 </style>
 
 
+<div id="first-slider" class="hidden-sm hidden-xs">
+                    <div id="carousel-example-generic" class="carousel slide carousel-fade">
+                        <!-- Indicators -->
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="max-height:428px">
+                            <!-- Item 1 -->
 
 
-<div class="container">
 
-	<div data-am-fadeshow="next-prev-navigation">
+                            <div class="item slide1 active">
+                                <div class="row"><div class="container">
 
-		<!-- Radio -->
-		<input type="radio" name="css-fadeshow" id="slide-1" />
-		<input type="radio" name="css-fadeshow" id="slide-2" />
-		<input type="radio" name="css-fadeshow" id="slide-3" />
+                                </div></div>
+                             </div>
 
-		<!-- Slides -->
-		<div class="fs-slides">
-			<div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1460500063983-994d4c27756c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2550);">
-				<!-- Add content to images (sample) -->
-				<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
-					<h1 style="margin-top: 0; margin-bottom: 0.8vw; font-size: 5vw; font-weight: bold;">CSS Fadeshow</h1>
-					<p style="font-size: 2vw; font-weight: 100; margin-top: 0;">Easy to implement and use on <strong>your</strong> site!</p>
-				</div>
-			</div>
-			<div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
-			<div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1449057528837-7ca097b3520c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
-		</div>
+                             <div class="item slide2 ">
+                                 <div class="row"><div class="container">
 
-		<!-- Quick Navigation -->
-		<div class="fs-quick-nav">
-			<label class="fs-quick-btn" for="slide-1"></label>
-			<label class="fs-quick-btn" for="slide-2"></label>
-			<label class="fs-quick-btn" for="slide-3"></label>
-		</div>
+                                 </div></div>
+                              </div>
 
-		<!-- Prev Navigation -->
-		<div class="fs-prev-nav">
-			<label class="fs-prev-btn" for="slide-1"></label>
-			<label class="fs-prev-btn" for="slide-2"></label>
-			<label class="fs-prev-btn" for="slide-3"></label>
-		</div>
+                              <div class="item slide3 ">
+                                  <div class="row"><div class="container">
 
-		<!-- Next Navigation -->
-		<div class="fs-next-nav">
-			<label class="fs-next-btn" for="slide-1"></label>
-			<label class="fs-next-btn" for="slide-2"></label>
-			<label class="fs-next-btn" for="slide-3"></label>
-		</div>
+                                  </div></div>
+                               </div>
 
-	</div>
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <!-- End Wrapper for slides-->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
 
 
 
