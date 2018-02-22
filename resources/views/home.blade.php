@@ -93,9 +93,6 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 /*  */
 </style>
 
-
-
-
 <div id="first-slider" class="hidden-sm hidden-xs">
                     <div id="carousel-example-generic" class="carousel slide carousel-fade">
                         <!-- Indicators -->
@@ -123,14 +120,6 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
                                   </div></div>
                                </div>
-
-
-
-
-
-
-
-
 
 
 
