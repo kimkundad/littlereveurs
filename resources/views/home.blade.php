@@ -16,7 +16,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
 @section('stylesheet')
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
 
 @stop('stylesheet')
 
@@ -94,48 +94,87 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 /*  */
 </style>
 
-<div id="first-slider" class="hidden-sm hidden-xs">
-                    <div id="carousel-example-generic" class="carousel slide carousel-fade">
-                        <!-- Indicators -->
+<div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox" style="max-height:428px">
-                            <!-- Item 1 -->
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+        <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+    </ol>
 
+    <!-- Wrapper For Slides -->
+    <div class="carousel-inner" role="listbox">
 
+        <!-- Third Slide -->
+        <div class="item active">
 
-                            <div class="item slide1 active">
-                                <div class="row"><div class="container">
+            <!-- Slide Background -->
+            <img src="https://images.pexels.com/photos/207990/pexels-photo-207990.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
 
-                                </div></div>
-                             </div>
-
-                             <div class="item slide2 ">
-                                 <div class="row"><div class="container">
-
-                                 </div></div>
-                              </div>
-
-                              <div class="item slide3 ">
-                                  <div class="row"><div class="container">
-
-                                  </div></div>
-                               </div>
-
-
-
-
-
-                        </div>
-                        <!-- End Wrapper for slides-->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                            <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
-                        </a>
+            <div class="container">
+                <div class="row">
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_left">
+                        <h1 data-animation="animated zoomInRight">Bootstrap Carousel</h1>
+                        <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                        <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                        <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- End of Slide -->
+
+        <!-- Second Slide -->
+        <div class="item">
+
+            <!-- Slide Background -->
+            <img src="https://images.pexels.com/photos/207990/pexels-photo-207990.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
+            <!-- Slide Text Layer -->
+            <div class="slide-text slide_style_center">
+                <h1 data-animation="animated flipInX">Bootstrap touch slider</h1>
+                <p data-animation="animated lightSpeedIn">Make Bootstrap Better together.</p>
+                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">select one</a>
+                <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">select two</a>
+            </div>
+        </div>
+        <!-- End of Slide -->
+
+        <!-- Third Slide -->
+        <div class="item">
+
+            <!-- Slide Background -->
+            <img src="https://images.pexels.com/photos/207990/pexels-photo-207990.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <div class="bs-slider-overlay"></div>
+            <!-- Slide Text Layer -->
+            <div class="slide-text slide_style_right">
+                <h1 data-animation="animated zoomInLeft">Beautiful Animations</h1>
+                <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
+            </div>
+        </div>
+        <!-- End of Slide -->
+
+
+    </div><!-- End of Wrapper For Slides -->
+
+    <!-- Left Control -->
+    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+        <span class="fa fa-angle-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <!-- Right Control -->
+    <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+        <span class="fa fa-angle-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div> <!-- End  bootstrap-touch-slider Slider -->
 
 
 
