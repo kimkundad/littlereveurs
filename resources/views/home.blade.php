@@ -1,6 +1,5 @@
 @extends('layouts-front.template')
 
-
 @section('title')
 Little Reveurs ขาย ชุดมาสคอต ตุ๊กตาโทโทโร่
 @stop
@@ -14,30 +13,22 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
     'image' => url('assets/img/littlereveurs_facebook.png')])
 @stop
 
-
 @section('stylesheet')
-
 
 @stop('stylesheet')
 
 @section('content')
 
-
-
-
-
-
-
 <style>
 
 #first-slider .slide1{
-    background-image: url({{url('assets/img/1499233524-image.jpg')}});
+    background-image: url(assets/img/1499233524-image.jpg);
 }
 #first-slider .slide2{
-    background-image: url({{url('assets/img/1499233524-image.jpg')}});
+    background-image: url(assets/img/1499233524-image.jpg);
 }
 #first-slider .slide3{
-    background-image: url({{url('assets/img/1499233524-image.jpg')}});
+    background-image: url(assets/img/1499233524-image.jpg);
 }
 
 
