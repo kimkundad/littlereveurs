@@ -546,33 +546,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 @section('scripts')
 
-<script>
-var button = document.getElementById('button_open');
 
-button.onclick = function() {
-    var div = document.getElementById('newpost');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-};
-</script>
-
-<script>
-var button = document.getElementById('button_open_res');
-
-button.onclick = function() {
-    var div = document.getElementById('newpost_res');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-};
-</script>
 
 
 @stop('scripts')
