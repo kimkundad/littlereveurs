@@ -28,7 +28,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
     background-image: url(assets/img/1499233525-image.jpg);
 }
 #first-slider .slide3{
-    background-image: url(assets/img/1499233524-image.jpg);
+    background-image: url(assets/img/1499233526-image.jpg);
 }
 
 
