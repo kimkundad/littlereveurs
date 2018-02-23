@@ -23,7 +23,7 @@ class HomeController extends Controller
     public function index()
     {
 
-      $shop = DB::table('products')->select(
+      $mas = DB::table('products')->select(
             'products.*',
             'products.id as pro_id',
             'categories.*',
@@ -32,11 +32,14 @@ class HomeController extends Controller
             ->leftjoin('shops','shops.id', 'products.shop_id')
             ->leftjoin('categories','categories.category_id', 'products.cat_id')
             ->where('products.product_status', 1)
+            ->where('categories.category_id', 3)
             ->orderBy('products.view', 'desc')
-            ->limit(8)
+            ->limit(4)
             ->get();
+
+
       //dd($home);
-      $data['home'] = $shop;
+      $data['home'] = $mas;
 
       $shop_ran = DB::table('products')->select(
             'products.*',
