@@ -362,7 +362,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
         <div class="col-xs-12">
-                <div class="view-more-wrapper"><a href="{{url('mascot')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
+                <div class="view-more-wrapper"><a href="{{url('mascot')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">ดูสินค้าเพิ่ม</span></a></div>
               </div>
 
 
@@ -441,7 +441,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
         <div class="col-xs-12">
-                <div class="view-more-wrapper"><a href="{{url('piggy_totoro')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
+                <div class="view-more-wrapper"><a href="{{url('piggy_totoro')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">ดูสินค้าเพิ่ม</span></a></div>
               </div>
 
 
