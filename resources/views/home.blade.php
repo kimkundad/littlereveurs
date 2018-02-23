@@ -142,7 +142,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
           <div class="row">
-          
+
         <div class="col-md-12 " >
           <h3>หมวดหมู่</h3>
 
@@ -408,9 +408,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 }
 </style>
 
-        <div class="col-xs-12">
-                <div class="view-more-wrapper"><a href="#" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">View More Posts</span></a></div>
-              </div>
+      
 
 
 
