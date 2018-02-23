@@ -59,6 +59,23 @@ class HomeController extends Controller
       //dd($home);
       $data['piggy_totoro'] = $piggy_totoro;
 
+
+      $lamp_totoro = DB::table('products')->select(
+            'products.*',
+            'products.id as pro_id',
+            'categories.*',
+            'shops.*'
+            )
+            ->leftjoin('shops','shops.id', 'products.shop_id')
+            ->leftjoin('categories','categories.category_id', 'products.cat_id')
+            ->where('products.product_status', 1)
+            ->where('categories.category_id', 5)
+            ->orderBy('products.view', 'desc')
+            ->limit(4)
+            ->get();
+      //dd($home);
+      $data['lamp_totoro'] = $lamp_totoro;
+
       $shop_ran = DB::table('products')->select(
             'products.*',
             'products.id as pro_id',
