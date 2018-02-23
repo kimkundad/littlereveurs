@@ -530,8 +530,89 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
               <div class="col-xs-12">
-                      <div class="view-more-wrapper"><a href="{{url('piggy_totoro')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">ดูสินค้าเพิ่ม</span></a></div>
+                      <div class="view-more-wrapper"><a href="{{url('lamp_totoro')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">ดูสินค้าเพิ่ม</span></a></div>
                     </div>
+
+
+
+
+
+
+
+
+                    <div class="col-md-12 " >
+                      <h3>ขายตุ๊กตาตัวใหญ่ ขายตุ๊กตาหมีตัวใหญ่น่ารักราคาถูก </h3>
+                      <p>ขายตุ๊กตาตัวใหญ่ ตุ๊กตาหมีตัวใหญ่ ราคาถูก เหมาะให้เป็นของขวัญในวันวาเลนไทน์, ขวัญรับปริญญา ของขวัญวันเกิด เหมาะกับทุกเทศกาล</p>
+
+
+
+                      <div class="body-project">
+
+                                <div class="row">
+
+
+                                  @if($totoro_dolls)
+                                    @foreach($totoro_dolls as $homes)
+                                  <div class="col-sm-4 col-md-3">
+
+                                        <div class="thumbnail a_sd_move">
+                                          <div style="max-height: 184px; min-height: 184px; overflow: hidden; position: relative;">
+                                          <a href="{{url('product-'.$homes->pro_id)}}">
+                                          <img src="{{url('assets/product/'.$homes->product_image)}}">
+
+                                          </a></div>
+                                          <div class="caption" style="padding: 3px;">
+                                            <div class="descript bold">
+                                                <a href="{{url('product-'.$homes->pro_id)}}">{{$homes->product_name}}</a>
+                                            </div>
+                                            <div class="descript" style="padding-bottom: 5px;color: #777; font-size: 12px;border-bottom: 1px dashed #dff0d8; ">
+                                                                       </div>
+
+                                            <div class="descript" style="height: 20px;">
+                                              <span style="color: #e03753; font-size: 14px; font-weight: 700;"><i class="fa fa-map-marker"></i> {{$homes->price_2}} บาท</span>
+                                              <div class="descript-t">
+                                              <div class="postMetaInline-authorLockup">
+
+                                                                                <div class="rating">
+                                                    <i class="fa fa-star voted"></i>
+                                                    <i class="fa fa-star voted"></i>
+                                                    <i class="fa fa-star voted"></i>
+                                                    <i class="fa fa-star voted"></i>
+                                                    <i class="fa fa-star voted"></i>
+                                                    <span style="color: #777; font-size: 12px;">5.0</span>
+                                                </div>
+
+                                              </div>
+                                              </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                       @endforeach
+                                      @endif
+
+
+
+                                </div>
+
+
+
+                      </div>
+                    <!--    <div class="panel panel-default">
+                            <div class="panel-heading">Welcome</div>
+
+                            <div class="panel-body">
+                                Your Application's Landing Page.
+                            </div>
+                        </div> -->
+
+                    </div>
+
+
+                    <div class="col-xs-12">
+                            <div class="view-more-wrapper"><a href="{{url('totoro_dolls')}}" class="view-more"><span class="plus-sign">+</span><span class="view-more-text">ดูสินค้าเพิ่ม</span></a></div>
+                          </div>
 
 
 

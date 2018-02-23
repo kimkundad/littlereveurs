@@ -92,6 +92,23 @@ class HomeController extends Controller
       $data['shop_ran'] = $shop_ran;
 
 
+      $totoro_dolls = DB::table('products')->select(
+            'products.*',
+            'products.id as pro_id',
+            'categories.*',
+            'shops.*'
+            )
+            ->leftjoin('shops','shops.id', 'products.shop_id')
+            ->leftjoin('categories','categories.category_id', 'products.cat_id')
+            ->where('products.product_status', 1)
+            ->where('categories.category_id', 6)
+            ->orderBy('products.view', 'desc')
+            ->limit(4)
+            ->get();
+      //dd($home);
+      $data['totoro_dolls'] = $totoro_dolls;
+
+
         return view('/home' ,$data);
     }
 
