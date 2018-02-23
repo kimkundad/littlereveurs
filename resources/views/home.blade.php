@@ -481,7 +481,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
         <div class="item">
 
             <!-- Slide Background -->
-            <img src="https://images.pexels.com/photos/207990/pexels-photo-207990.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <img src="{{url('assets/img/slide_img1.jpg')}}" alt="Bootstrap Touch Slider"  class="slide-image"/>
             <div class="bs-slider-overlay"></div>
             <!-- Slide Text Layer -->
             <div class="slide-text slide_style_center">
