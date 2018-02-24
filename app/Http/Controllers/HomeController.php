@@ -140,6 +140,13 @@ class HomeController extends Controller
     }
 
 
+    public function payments()
+    {
+
+      return view('/payments');
+    }
+
+
     public function piggy_totoro()
     {
       $shop = DB::table('products')->select(
