@@ -133,6 +133,12 @@ class HomeController extends Controller
       return view('/mascot' ,$data);
     }
 
+    public function about()
+    {
+
+      return view('/about');
+    }
+
 
     public function piggy_totoro()
     {
