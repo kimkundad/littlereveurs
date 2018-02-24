@@ -126,6 +126,10 @@ ul.list_ok li:before {
 ul.list_ok {
     list-style: none;
   }
+  .body-project{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 </style>
 
 <div class="jumbotron" style="margin-bottom: 10px;">

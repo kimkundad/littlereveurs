@@ -102,6 +102,10 @@ ul#cat_nav li a  {
     font-size: 34px;
     color: #F90;
 }
+.body-project{
+  padding-right: 10px;
+  padding-left: 10px;
+}
 </style>
 
 <div class="jumbotron" style="margin-bottom: 10px;">
