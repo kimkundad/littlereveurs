@@ -28,7 +28,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
     background-image: url(assets/img/1499233525-image.jpg);
 }
 #first-slider .slide3{
-    background-image: url(assets/img/1499233526-image.jpg?v2);
+    background-image: url(assets/img/1499233526-image.jpg);
 }
 
 
@@ -238,6 +238,33 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
                                           </div>
                                         </div>
                                       </div>
+
+
+                                      <div class=" col-md-2 col-sm-3 col-xs-6">
+
+                                            <div class="thumbnail a_sd_move">
+                                              <div style="max-height: 184px; overflow: hidden; position: relative;">
+                                              <a href="{{url('totoro_dolls')}}">
+                                              <img src="{{url('assets/img/giphy.gif')}}">
+
+                                              </a></div>
+
+                                            </div>
+                                          </div>
+
+
+
+                                          <div class=" col-md-2 col-sm-3 col-xs-6">
+
+                                                <div class="thumbnail a_sd_move">
+                                                  <div style="max-height: 184px; overflow: hidden; position: relative;">
+                                                  <a href="{{url('totoro_dolls')}}">
+                                                  <img src="{{url('assets/img/il_570xN.1194781902_3njp.jpg')}}">
+
+                                                  </a></div>
+
+                                                </div>
+                                              </div>
 
 
 
