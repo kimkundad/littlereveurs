@@ -14,7 +14,7 @@ About us | Little Reveurs
 
     position: relative;
     height: 280px;
-    background: #4d536d url(assets/img/1920x450_littlereveurs.jpg) no-repeat center top;
+    background: #4d536d url(assets/img/1920x450_littlereveurs2.jpg) no-repeat center top;
     background-size: cover;
     color: #fff;
     width: 100%;
@@ -108,7 +108,7 @@ ul#cat_nav li a  {
     <div id="carousel-home-banner" class="carousel slide fade in" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
           <div class="item active">
-              <img alt="Places to visit in Japan" src="{{url('assets/img/1920x450_littlereveurs.jpg')}}">
+              <img alt="Places to visit in Japan" src="{{url('assets/img/1920x450_littlereveurs2.jpg')}}">
 
 
           </div>
