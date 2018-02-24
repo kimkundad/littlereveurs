@@ -127,8 +127,8 @@ ul.list_ok {
     list-style: none;
   }
   .body-project{
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 13px;
+    padding-left: 13px;
   }
 </style>
 
