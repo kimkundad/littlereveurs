@@ -14,7 +14,7 @@ About us | Little Reveurs
 
     position: relative;
     height: 280px;
-    background: #4d536d url(assets/image/1920x450_BangKong.jpg) no-repeat center top;
+    background: #4d536d url(assets/img/1920x450_littlereveurs.jpg) no-repeat center top;
     background-size: cover;
     color: #fff;
     width: 100%;
@@ -109,23 +109,8 @@ ul#cat_nav li a  {
       <div class="carousel-inner" role="listbox">
           <div class="item active">
               <img alt="Places to visit in Japan" src="{{url('assets/image/1920x450_BangKong.jpg')}}">
-              <div class="carousel-caption">
 
-                <h2>
 
-                    ABOUT US
-             </h2>
-
-                <div class="meta" style="padding-left:2px;">
-                  <p class="published-at" style="font-size: 14px;">
-                    SIRISPACE.com
-                      is a real estate company located in Bangkok, Thailand that helps connect property hunters with the most current database of
-                      commercial and residential properties for sale and rent, with property news and all the resources a buyer, renter or seller needs to
-                      make their next real estate decision. SIRISPACE.com
-                       offer the first cash back program for renters, buyers or referrals in Asia..</p>
-
-                </div>
-              </div>
           </div>
       </div>
     </div>
@@ -146,75 +131,40 @@ ul#cat_nav li a  {
 
           <div class="body-project">
 
-                    <div class="row">
 
 
 
 
-
-
-                      <div class="col-md-6">
-
-                        <div class="feature">
-                            <img src="{{url('assets/images/free_point.png')}}" style="height:65px">
-                            <h3><span style="color:#08a00a">WHAT </span> IS CASH BACK?</h3>
-                            <p>
-                              How it works is anyone who registers an account with Siri Space is offered a
-                              10% cash back of the applicable agent fees on a transaction. Basically,
-                              Siri Space is giving the customer back 10% of the commission.  </p>
-                        </div>
-
-                      </div>
-
-
-
-                      <div class="col-md-6">
-
-                          <div class="feature">
-                              <img src="{{url('assets/image/319882852_n.png')}}" style="height:65px">
-                              <h3><span style="color:#08a00a">BUYING </span></h3>
-                              <p>
-                                 For example, a purchase in Bangkok (3% commission) for a condo worth 10M THB. The commission for Siri Space as the agent will be 300,000 THB. 10% of the commission (30,000 THB) will be given to the buyer upon completion of the transaction.
-                             </p>
-                          </div>
-                      </div>
-
-
-                      <div class="col-md-6">
-
-                        <div class="feature">
-                            <img src="{{url('assets/image/288744.png')}}" style="height:65px">
-                            <h3><span style="color:#08a00a">RENTING </span> </h3>
-                            <p>
-                              For example, a rental in Bangkok (1 month commission) for a condo worth 50,000 THB. The commission for Siri Space as the agent will be 50,000 THB. 10% of the commission (5,000 THB) will be given to the renter upon completion of the transaction.</p>
-                        </div>
-
-                      </div>
-
-
-                      <div class="col-md-6">
-
-                          <div class="feature">
-                              <img src="{{url('assets/image/19668278_1451671071581344_996143722_n.jpg')}}" style="height:65px">
-                              <h3>REFERRING A <span style="color:#08a00a">FRIEND</span> </h3>
-                              <p>
-                                A person has a friend moving to Thailand for a new job. The friend has a budget of 100,000 THB per month for a condo. The person refers their friend to Siri Space.
-                                Siri space finds the friend a condo for 100,000 THB.
-                                The commission for Siri Space as the agent will be 100,000 THB.
-                                10% of the commission (10,000 THB) will be given to the referrer upon completion of the transaction.</p>
-                          </div>
-                      </div>
-
-
-
-
-
-
-
-
-
-
-                    </div>
+            <div class="row">
+<div class="col-md-4 col-sm-6">
+  <img src="{{url('assets/img/slide_img1.jpg')}}" alt="Image" class="img-responsive styled">
+</div>
+<div class="col-md-7 col-md-offset-1 col-sm-6">
+  <h3>Little <span>Reveurs</span></h3>
+  <p>
+    31/99 โพธิ์ทองแมนชั่น ซอยพหลโยธิน34 แขวงเสนานิคม เขตจตุจักร กรุงเทพฯ 10900
+  </p>
+  <h4>Mel at vide soluta </h4>
+  <p>
+    Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut utamur antiopam inciderint sed. Ut iriure perpetua voluptaria has, vim postea denique in, <strong>mollis pertinax elaboraret</strong> sed in. Per no vidit timeam, quis omittam sed at. Ludus albucius adversarium eam eu. Sit eu reque tation aliquip. Quo no dolorum albucius lucilius, hinc eligendi ut sed. Ex nam quot ferri suscipit, mea ne legere alterum repudiandae.
+  </p>
+  <h4>Don't forget</h4>
+  <p>
+    Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut <a href="#">utamur antiopam inciderint</a> sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at.
+  </p>
+  <div class="general_icons">
+    <ul>
+      <li><i class="icon_set_1_icon-34"></i>Camera</li>
+      <li><i class="icon_set_1_icon-31"></i>Video camera</li>
+      <li><i class="icon_set_1_icon-35"></i>Credit cards</li>
+      <li><i class="icon_set_1_icon-63"></i>Mobile</li>
+      <li><i class="icon_set_1_icon-33"></i>Travel bag</li>
+      <li><i class="icon_set_1_icon-9"></i>Snack</li>
+      <li><i class="icon_set_1_icon-37"></i>Map</li>
+    </ul>
+  </div>
+</div>
+</div>
                     <hr>
                   </div>
 
