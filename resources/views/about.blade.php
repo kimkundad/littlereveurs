@@ -147,13 +147,14 @@ ul#cat_nav li a  {
   <img src="{{url('assets/img/slide_img1.jpg')}}" alt="Image" class="img-responsive styled">
 </div>
 <div class="col-md-6 col-sm-6">
-  <h3>Little <span>Reveurs</span></h3>
+  <h3>เกี่ยวกับเรา Little <span>Reveurs</span></h3>
   <p>
     31/99 โพธิ์ทองแมนชั่น ซอยพหลโยธิน34 แขวงเสนานิคม เขตจตุจักร กรุงเทพฯ 10900
   </p>
   <h4>Mel at vide soluta </h4>
   <p>
-    Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut utamur antiopam inciderint sed. Ut iriure perpetua voluptaria has, vim postea denique in, <strong>mollis pertinax elaboraret</strong> sed in. Per no vidit timeam, quis omittam sed at. Ludus albucius adversarium eam eu. Sit eu reque tation aliquip. Quo no dolorum albucius lucilius, hinc eligendi ut sed. Ex nam quot ferri suscipit, mea ne legere alterum repudiandae.
+    เป็นบริษัทจัดจำหน่ายสินค้า ชุดมาสคอต ชุด mascot ชุดแฟนซี ชุดนอนสัตว์ ขายกระปุกออมสิน Totoro, โทโทโร่ เป็นคอลเลคชั่นครบชุด ราคาถูก, ขายโคมไฟโตโตโร่, โคมไฟ Totoro ขายตุ๊กตาตัวใหญ่ ตุ๊กตาหมีตัวใหญ่ ราคาถูก
+    ขวัญในวันวาเลนไทน์, ขวัญรับปริญญา ของขวัญวันเกิด เหมาะกับทุกเทศกาล บางชุดหาไม่ได้ในเมืองไทย ติดตามข่าวสารและโปรโมชั่นใหม่ๆ สำหรับพ่อค้าแม่ค้า ขอราคาส่งได้ทาง Line ID : @littshop , โทร. 080-111-3193
   </p>
 
 
