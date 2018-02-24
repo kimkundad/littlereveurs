@@ -123,6 +123,9 @@ ul.list_ok li:before {
     left: 0;
     top: 0;
 }
+ul.list_ok {
+    list-style: none;
+  }
 </style>
 
 <div class="jumbotron" style="margin-bottom: 10px;">
@@ -170,15 +173,14 @@ ul.list_ok li:before {
 <div class="col-md-4 col-sm-6">
   <h3>การชำระค่าสินค้า Little <span>Reveurs</span></h3>
   <p>
-    เรามีวิธีการชำระเงินที่หลากหลายให้ลูกค้าได้เลือก ชำระเงิน แบบต่างๆ
+    เรามีวิธีการชำระเงินที่หลากหลายให้ลูกค้าได้เลือก ชำระเงิน เครื่องเอทีเอ็ม (ATM), บริการธนาคารออนไลน์(Online Banking Payment)
   </p>
-  <ul class="list_ok">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>No scripta electram necessitatibus sit</li>
-								<li>Quidam percipitur instructior an eum</li>
-								<li>Ut est saepe munere ceteros</li>
-								<li>No scripta electram necessitatibus sit</li>
-								<li>Quidam percipitur instructior an eum</li>
+  <ul class="list_ok">ข้อมูลการแจ้งโอน
+								<li>ส่งสลิป แจ้งวันเวลาที่โอน + ชื่อ ที่อยู่ เบอร์โทร</li>
+								<li>ส่งสินค้าวันถัดไปหลังจากแจ้งโอน</li>
+								<li>แจ้งเลขพัสดุทางแชทส่วนตัว</li>
+								<li>เก็บจองสินค้า 1 วัน</li>
+								<li>สินค้าหมดโอนเงินคืน หรือเปลี่ยนแบบใหม่</li>
 							</ul>
 
 
