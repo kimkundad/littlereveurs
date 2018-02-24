@@ -26,10 +26,10 @@
 
 
 
-              <li><a href="{{url('mascot')}}"><i class="fa fa-paper-plane "></i> ชุดมาสคอต</a></li>
-                <li><a href="{{url('piggy_totoro')}}"><i class="fa fa-bullseye"></i> ออมสิน โทโทโร่</a></li>
+              <li><a href="{{url('mascot')}}"><i class="fa fa-smile-o"></i> ชุดมาสคอต</a></li>
+                <li><a href="{{url('piggy_totoro')}}"><i class="fa fa-bomb"></i> ออมสิน โทโทโร่</a></li>
 
-                <li><a href="{{url('lamp_totoro')}}"><i class="fa fa-paper-plane "></i> โคมไฟ โทโทโร่</a></li>
+                <li><a href="{{url('lamp_totoro')}}"><i class="fa fa-binoculars "></i> โคมไฟ โทโทโร่</a></li>
                   <li><a href="{{url('totoro_dolls')}}"><i class="fa fa-bullseye"></i> ตุ๊กตา ตัวใหญ่</a></li>
 
                 @if (Auth::guest())
@@ -39,7 +39,7 @@
 
                 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="caret"></span>
+                          <i class="fa fa-user"></i>  {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
