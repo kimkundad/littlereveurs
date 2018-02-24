@@ -30,7 +30,7 @@ color: #ccc;
                 <h4>Little Reveurs<span class="head-line"></span></h4>
                 <ul>
                   <li><a href="{{url('about')}}" ><span class="text-gray">เกี่ยวกับเรา</span>   </a></li>
-                  <li><a href="{{url('contact_us')}}" ><span class="text-gray">ติดต่อเรา</span>   </a></li>
+
                   @if (Auth::guest())
                   <li><a href="{{url('login')}}" ><span class="text-gray">Login</span>   </a></li>
                   <li><a href="{{url('register')}}" ><span class="text-gray">Register</span> </a>  </li>
