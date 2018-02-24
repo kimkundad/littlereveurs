@@ -110,6 +110,13 @@ ul#cat_nav li a  {
           <div class="item active">
               <img alt="Places to visit in Japan" src="{{url('assets/img/1920x450_littlereveurs2.jpg')}}">
 
+              <div class="carousel-caption">
+
+                <h2>
+
+                    Little Reveurs
+             </h2>
+             </div>
 
           </div>
       </div>
@@ -136,10 +143,10 @@ ul#cat_nav li a  {
 
 
             <div class="row">
-<div class="col-md-4 col-sm-6">
+<div class="col-md-6 col-sm-6">
   <img src="{{url('assets/img/slide_img1.jpg')}}" alt="Image" class="img-responsive styled">
 </div>
-<div class="col-md-7 col-md-offset-1 col-sm-6">
+<div class="col-md-6 col-sm-6">
   <h3>Little <span>Reveurs</span></h3>
   <p>
     31/99 โพธิ์ทองแมนชั่น ซอยพหลโยธิน34 แขวงเสนานิคม เขตจตุจักร กรุงเทพฯ 10900
@@ -148,21 +155,9 @@ ul#cat_nav li a  {
   <p>
     Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut utamur antiopam inciderint sed. Ut iriure perpetua voluptaria has, vim postea denique in, <strong>mollis pertinax elaboraret</strong> sed in. Per no vidit timeam, quis omittam sed at. Ludus albucius adversarium eam eu. Sit eu reque tation aliquip. Quo no dolorum albucius lucilius, hinc eligendi ut sed. Ex nam quot ferri suscipit, mea ne legere alterum repudiandae.
   </p>
-  <h4>Don't forget</h4>
-  <p>
-    Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut <a href="#">utamur antiopam inciderint</a> sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at.
-  </p>
-  <div class="general_icons">
-    <ul>
-      <li><i class="icon_set_1_icon-34"></i>Camera</li>
-      <li><i class="icon_set_1_icon-31"></i>Video camera</li>
-      <li><i class="icon_set_1_icon-35"></i>Credit cards</li>
-      <li><i class="icon_set_1_icon-63"></i>Mobile</li>
-      <li><i class="icon_set_1_icon-33"></i>Travel bag</li>
-      <li><i class="icon_set_1_icon-9"></i>Snack</li>
-      <li><i class="icon_set_1_icon-37"></i>Map</li>
-    </ul>
-  </div>
+
+
+
 </div>
 </div>
                     <hr>
