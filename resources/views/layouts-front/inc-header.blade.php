@@ -26,8 +26,11 @@
 
 
 
-            <!--    <li><a href="{{url('Refer')}}"><i class="fa fa-paper-plane "></i> Refer</a></li>
-                <li><a href="{{url('News')}}"><i class="fa fa-bullseye"></i> News</a></li> -->
+              <li><a href="{{url('mascot')}}"><i class="fa fa-paper-plane "></i> ชุดมาสคอต</a></li>
+                <li><a href="{{url('piggy_totoro')}}"><i class="fa fa-bullseye"></i> ออมสิน โทโทโร่</a></li>
+
+                <li><a href="{{url('lamp_totoro')}}"><i class="fa fa-paper-plane "></i> โคมไฟ โทโทโร่</a></li>
+                  <li><a href="{{url('totoro_dolls')}}"><i class="fa fa-bullseye"></i> ตุ๊กตา ตัวใหญ่</a></li>
 
                 @if (Auth::guest())
                     <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
