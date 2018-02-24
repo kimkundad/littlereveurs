@@ -197,6 +197,33 @@
                                       </div>
 
 
+                                      <div class=" col-md-2 col-sm-3 col-xs-6">
+
+                                            <div class="thumbnail a_sd_move">
+                                              <div style="max-height: 184px; overflow: hidden; position: relative;">
+                                              <a >
+                                              <img src="{{url('assets/img/giphy.gif')}}">
+
+                                              </a></div>
+
+                                            </div>
+                                          </div>
+
+
+
+                                          <div class=" col-md-2 col-sm-3 col-xs-6">
+
+                                                <div class="thumbnail a_sd_move">
+                                                  <div style="max-height: 184px; overflow: hidden; position: relative;">
+                                                  <a >
+                                                  <img src="{{url('assets/img/il_570xN.1194781902_3njp.jpg')}}">
+
+                                                  </a></div>
+
+                                                </div>
+                                              </div>
+
+
 
 
 
