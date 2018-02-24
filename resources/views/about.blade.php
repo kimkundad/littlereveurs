@@ -108,7 +108,7 @@ ul#cat_nav li a  {
     <div id="carousel-home-banner" class="carousel slide fade in" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
           <div class="item active">
-              <img alt="Places to visit in Japan" src="{{url('assets/image/1920x450_BangKong.jpg')}}">
+              <img alt="Places to visit in Japan" src="{{url('assets/img/1920x450_littlereveurs.jpg')}}">
 
 
           </div>
