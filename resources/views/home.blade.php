@@ -244,10 +244,10 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
                                             <div class="thumbnail a_sd_move">
                                               <div style="max-height: 184px; overflow: hidden; position: relative;">
-
+                                              <a >
                                               <img src="{{url('assets/img/giphy.gif')}}">
 
-                                              </div>
+                                              </a></div>
 
                                             </div>
                                           </div>
@@ -258,10 +258,10 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
                                                 <div class="thumbnail a_sd_move">
                                                   <div style="max-height: 184px; overflow: hidden; position: relative;">
-
+                                                  <a >
                                                   <img src="{{url('assets/img/il_570xN.1194781902_3njp.jpg')}}">
 
-                                                  </div>
+                                                  </a></div>
 
                                                 </div>
                                               </div>
