@@ -23,6 +23,7 @@ Route::get('/callback', 'FacebookAuthController@callback');
 Route::get('/product-{id}', 'HomeController@show');
 Route::get('/about', 'HomeController@about');
 Route::get('/payments', 'HomeController@payments');
+Route::get('/shipping', 'HomeController@shipping');
 
 
 Route::get('/mascot', 'HomeController@mascot');

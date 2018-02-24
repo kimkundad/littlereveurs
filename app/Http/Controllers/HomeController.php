@@ -146,6 +146,12 @@ class HomeController extends Controller
       return view('/payments');
     }
 
+    public function shipping()
+    {
+
+      return view('/shipping');
+    }
+
 
     public function piggy_totoro()
     {

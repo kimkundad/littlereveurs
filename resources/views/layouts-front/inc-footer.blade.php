@@ -46,8 +46,7 @@ color: #ccc;
                 <ul>
 
                  <li><a href="{{url('/payments')}}"><span>การชำระเงิน</span></a>   </li>
-                 <li><a href="{{url('terms_condition')}}"><span>การสั่งซื้อสินค้า</span></a> </li>
-                  <li><a href="{{url('terms_condition')}}"><span>การส่งสินค้า</span></a> </li>
+                  <li><a href="{{url('/shipping')}}"><span>การส่งสินค้า</span></a> </li>
                   <li><a href="{{url('terms_condition')}}"><span>การคืนสินค้า</span></a> </li>
                 </ul>
             </div>
