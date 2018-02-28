@@ -172,7 +172,7 @@ ul.list_ok {
 
             <div class="row">
 
-<div class="col-md-8 col-md-offset-1">
+<div class="col-md-8 col-md-offset-2">
   <h3>Little Reveurs บริการจัดส่งสินค้าทั่ว 77 จังหวัดของประเทศไทย</h3>
   <p>
 
