@@ -152,6 +152,10 @@ class HomeController extends Controller
       return view('/shipping');
     }
 
+    public function returns(){
+      return view('/returns');
+    }
+
 
     public function piggy_totoro()
     {
