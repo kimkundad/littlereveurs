@@ -123,10 +123,10 @@
 
 
             @if (Auth::guest())
-                <li><a href="{{url('login')}}"><i class="fa fa-user"></i> Login <br>
+                <li><a href="{{url('login')}}" style="text-align: center;"><i class="fa fa-user"></i> Login <br>
                   <img src="{{url('assets/img/Cartoon-5.png')}}" alt="" style="margin-top: 14px; width: 100px;">
                 </a></li>
-                <li><a href="{{url('register')}}"><i class="fa fa-lock"></i> Register<br>
+                <li><a href="{{url('register')}}" style="text-align: center;"><i class="fa fa-lock"></i> Register<br>
                   <img src="{{url('assets/img/Cartoon-6.png')}}" alt="" style="margin-top: 14px; width: 100px;">
                 </a></li>
             @else
