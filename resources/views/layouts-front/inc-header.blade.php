@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top hidden-sm hidden-xs">
+<nav class="navbar navbar-default navbar-static-top visible-sm visible-xs">
     <div class="container">
         <div class="navbar-header">
 
@@ -11,7 +11,7 @@
 
 
             <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{url('assets/img/logo_website.png')}}" class="hidden-sm hidden-xs" height="145" title="logo">
+                <img src="{{url('assets/img/logo_website.jpg')}}" class="hidden-sm hidden-xs" height="145" title="logo">
                 <img src="{{url('assets/img/logo_1.png')}}" class="visible-sm visible-xs" height="45" title="logo">
             </a>
         </div>
@@ -50,5 +50,26 @@
                 @endif
             </ul>
         </div>
+    </div>
+</nav>
+<style>
+.header {
+    margin-left: 0;
+    margin-right: 0;
+}
+.logo-container {
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+</style>
+<nav class=" hidden-sm hidden-xs">
+    <div class="container">
+
+      <div class="header header-primary text-center">
+                      <div class="logo-container">
+                          <img src="{{url('assets/img/logo_website.jpg')}}" alt="">
+                      </div>
+      </div>
+
     </div>
 </nav>
