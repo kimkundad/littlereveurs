@@ -75,6 +75,9 @@
         margin-left: -80px;
     }
 }
+.content-section-b{
+  background: url(assets/img/body-bg.png);
+}
 </style>
 <nav class=" hidden-sm hidden-xs">
     <div class="container">
