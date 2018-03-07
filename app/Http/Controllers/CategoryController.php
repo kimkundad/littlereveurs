@@ -143,8 +143,8 @@ class CategoryController extends Controller
             }
 
             $obj = DB::table('categories')
-      ->where('categories.category_id', $id)
-      ->delete();
+            ->where('categories.category_id', $id)
+            ->delete();
 
 
       return redirect(url('category'))->with('del_category','คุณทำการลบอสังหา สำเร็จ');

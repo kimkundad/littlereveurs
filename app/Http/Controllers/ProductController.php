@@ -146,17 +146,18 @@ class ProductController extends Controller
           $filename = time()."-".$gallary[$i]->getClientOriginalName();
           $gallary[$i]->move($path, $filename);
 
-
           $admins[] = [
               'product_id' => $pro_id,
               'image' => $filename,
               'user_id' => Auth::user()->id,
           ];
-
-
         }
         product_image::insert($admins);
       }
+
+
+
+
       return redirect(url('product/'.$pro_id.'/edit'))->with('add_gallery_success','คุณทำการเพิ่มอสังหา สำเร็จ');
 
 

@@ -11,7 +11,7 @@
 
 
             <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{url('assets/img/logo_website.jpg')}}" class="hidden-sm hidden-xs" height="145" title="logo">
+                <img src="{{url('assets/img/logo_website.png')}}" class="hidden-sm hidden-xs" height="145" title="logo">
                 <img src="{{url('assets/img/logo_1.png')}}" class="visible-sm visible-xs" height="45" title="logo">
             </a>
         </div>
