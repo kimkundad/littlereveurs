@@ -102,7 +102,7 @@ class HomeController extends Controller
             ->leftjoin('categories','categories.category_id', 'products.cat_id')
             ->where('products.product_status', 1)
             ->where('categories.category_id', 6)
-            ->orderBy('products.view', 'desc')
+            ->inRandomOrder()
             ->limit(4)
             ->get();
       //dd($home);
