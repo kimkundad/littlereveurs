@@ -115,14 +115,20 @@
             </li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="{{url('totoro_dolls')}}"><i class="fa fa-bullseye"></i> ตุ๊กตา ตัวใหญ่</a></li>
+		        <li><a href="{{url('totoro_dolls')}}"><i class="fa fa-bullseye"></i> ตุ๊กตา ตัวใหญ่ <br>
+              <img src="{{url('assets/img/Cartoon-4.png')}}" alt="" style="margin-top: 14px; width: 100px;">
+            </a></li>
 
 
 
 
             @if (Auth::guest())
-                <li><a href="{{url('login')}}"><i class="fa fa-user"></i> Login</a></li>
-                <li><a href="{{url('register')}}"><i class="fa fa-lock"></i> Register</a></li>
+                <li><a href="{{url('login')}}"><i class="fa fa-user"></i> Login <br>
+                  <img src="{{url('assets/img/Cartoon-5.png')}}" alt="" style="margin-top: 14px; width: 100px;">
+                </a></li>
+                <li><a href="{{url('register')}}"><i class="fa fa-lock"></i> Register<br>
+                  <img src="{{url('assets/img/Cartoon-6.png')}}" alt="" style="margin-top: 14px; width: 100px;">
+                </a></li>
             @else
 
             <li class="dropdown">
