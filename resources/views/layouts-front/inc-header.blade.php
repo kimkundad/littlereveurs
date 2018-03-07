@@ -85,19 +85,16 @@
                       </div>
       </div> -->
 
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default" role="navigation" style="min-height: 170px; border-color: #ffffff;">
     	  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
+
 		      <div class="navbar-brand navbar-brand-centered">
             <div class="logo-container">
+              <a href="{{url('/')}}">
                 <img src="{{url('assets/img/logo_website.jpg')}}" alt="">
+              </a>
             </div>
         </div>
 		    </div>
@@ -105,14 +102,35 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
 		      <ul class="nav navbar-nav">
-		        <li><a href="#">Link</a></li>
-		        <li><a href="#">Link</a></li>
-		        <li><a href="#">Link</a></li>
+		        <li><a href="{{url('mascot')}}"><i class="fa fa-smile-o"></i> ชุดมาสคอต</a></li>
+		        <li><a href="{{url('piggy_totoro')}}"><i class="fa fa-bomb"></i> ออมสิน โทโทโร่</a></li>
+		        <li><a href="{{url('lamp_totoro')}}"><i class="fa fa-binoculars "></i> โคมไฟ โทโทโร่</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
-		        <li><a href="#">Link</a></li>
-		        <li><a href="#">Link</a></li>
+		        <li><a href="{{url('totoro_dolls')}}"><i class="fa fa-bullseye"></i> ตุ๊กตา ตัวใหญ่</a></li>
+		      
+
+
+
+            @if (Auth::guest())
+                <li><a href="{{url('login')}}"><i class="fa fa-user"></i> Login</a></li>
+                <li><a href="{{url('register')}}"><i class="fa fa-lock"></i> Register</a></li>
+            @else
+
+            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <i class="fa fa-user"></i>  {{ Auth::user()->name }} <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li><a href="{{ url('logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                    </ul>
+                </li>
+            @endif
+
+
+
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
