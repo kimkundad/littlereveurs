@@ -108,8 +108,11 @@
             </li>
 
 		        <li><a href="{{url('piggy_totoro')}}"><i class="fa fa-bomb"></i> ออมสิน โทโทโร่ <br>
-              <img src="{{url('assets/img/Cartoon-2.png')}}" alt="" style="margin-top: 14px; width: 100px;"></a></a></li>
-		        <li><a href="{{url('lamp_totoro')}}"><i class="fa fa-binoculars "></i> โคมไฟ โทโทโร่</a></li>
+              <img src="{{url('assets/img/Cartoon-2.png')}}" alt="" style="margin-top: 14px; width: 100px;"></a>
+            </li>
+		        <li><a href="{{url('lamp_totoro')}}"><i class="fa fa-binoculars "></i> โคมไฟ โทโทโร่ <br>
+              <img src="{{url('assets/img/Cartoon-3.png')}}" alt="" style="margin-top: 14px; width: 100px;"></a>
+            </li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="{{url('totoro_dolls')}}"><i class="fa fa-bullseye"></i> ตุ๊กตา ตัวใหญ่</a></li>
