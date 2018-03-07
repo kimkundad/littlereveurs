@@ -68,7 +68,7 @@
         display: block;
         width: 160px;
         text-align: center;
-        background-color: #eee;
+        background-color: #fff;
     }
     .navbar>.container .navbar-brand-centered,
     .navbar>.container-fluid .navbar-brand-centered {
@@ -108,7 +108,7 @@
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="{{url('totoro_dolls')}}"><i class="fa fa-bullseye"></i> ตุ๊กตา ตัวใหญ่</a></li>
-		      
+
 
 
 
