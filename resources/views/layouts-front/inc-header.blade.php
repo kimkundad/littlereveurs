@@ -102,7 +102,11 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="navbar-brand-centered">
 		      <ul class="nav navbar-nav">
-		        <li><a href="{{url('mascot')}}"><i class="fa fa-smile-o"></i> ชุดมาสคอต</a></li>
+            
+		        <li><a href="{{url('mascot')}}"><i class="fa fa-smile-o"></i> ชุดมาสคอต <br>
+              <img src="{{url('assets/img/Cartoon-1.png')}}" alt=""></a>
+            </li>
+
 		        <li><a href="{{url('piggy_totoro')}}"><i class="fa fa-bomb"></i> ออมสิน โทโทโร่</a></li>
 		        <li><a href="{{url('lamp_totoro')}}"><i class="fa fa-binoculars "></i> โคมไฟ โทโทโร่</a></li>
 		      </ul>
