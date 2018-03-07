@@ -140,7 +140,7 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
 
 
 
-<div class="content-section-b" style="padding: 20px 0 50px 0;">
+<div class="content-section-b" style="padding: 20px 0 50px 0;     background: url(assets/img/body-bg.png);">
         <div class="container" >
 
 

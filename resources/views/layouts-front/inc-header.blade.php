@@ -136,6 +136,8 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
+    <hr style="margin-top: 10px; margin-bottom: 10px;">
+
 
     </div>
 </nav>
