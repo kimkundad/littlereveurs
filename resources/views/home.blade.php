@@ -77,7 +77,15 @@ Little Reveurs ขาย ชุดมาสคอต, ชุดนอนตั�
   margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.navbar {
+    position: relative;
+    min-height: 170px;
+    margin-bottom: 0px;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #ffffff;
+}
 }
 
 
